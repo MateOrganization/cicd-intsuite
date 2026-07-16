@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FL_EvaluateSAPISv38
+Bundle-SymbolicName: FL_EvaluateSAPISv38
+Bundle-Version: 1.0.4
+SAP-BundleType: FunctionLibraries
+SAP-NodeType: IFLMAP
+Import-Package: 
+Bundle-Activator: com.sap.xi.mapping.camel.FunctionLibraryBundleActivato
+ r
+Provide-Capability: functionlibraries.FL_EvaluateSAPISv38;version:Versio
+ n="1.0.4"
+Origin-Bundle-Name: FL_EvaluateSAPISv38
+Origin-Bundle-SymbolicName: FL_EvaluateSAPISv38
+Require-Capability: importedarchives.IA_EvaluateSAPISv38;resolution:=opt
+ ional;bundleType:String="ImportedArchives";source:String="reference"
+Origin-Bundle-Version: 1.0.4
+Origin-ModifiedDate: 1774307229546
+

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IA_EvaluateSAPISv38
+Bundle-SymbolicName: IA_EvaluateSAPISv38
+Bundle-Version: 1.0.2
+SAP-BundleType: ImportedArchives
+SAP-NodeType: IFLMAP
+Import-Package: 
+Provide-Capability: importedarchives.IA_EvaluateSAPISv38;version:Version
+ ="1.0.2"
+Origin-Bundle-Name: IA_EvaluateSAPISv38
+Origin-Bundle-SymbolicName: IA_EvaluateSAPISv38
+Origin-Bundle-Version: 1.0.2
+Origin-ModifiedDate: 1774307243851
+
