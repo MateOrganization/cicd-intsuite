@@ -34,7 +34,6 @@ on:
         type: choice
         options:
           - ""
-          - "Access Policies"
           - "Edge Integration Cell (EIC)"
       remove-scenario:
         description: "Remove a scenario from the active list. Empty = sync only."
@@ -43,6 +42,7 @@ on:
         options:
           - ""
           - "3-tier landscape (DEV / TST / PRD)"
+          - "Access Policies"
           - "BTP Dashboard Generator"
   schedule:
     - cron: '0 1 * * *'   # daily 01:00 UTC
