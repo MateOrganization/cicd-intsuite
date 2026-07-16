@@ -1,0 +1,3 @@
+# SAP CICD managed workflow files — do not edit manually
+# Updated: 2026-07-16T13:49:58Z
+sync-cicd-templates.yml

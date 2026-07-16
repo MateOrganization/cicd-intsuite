@@ -32,13 +32,17 @@ on:
         description: "Add a scenario to the active list. Empty = sync only."
         required: false
         type: choice
-        options:  #!cicd:install-options!
+        options:
           - ""
+          - "3-tier landscape (DEV / TST / PRD)"
+          - "Access Policies"
+          - "BTP Dashboard Generator"
+          - "Edge Integration Cell (EIC)"
       remove-scenario:
         description: "Remove a scenario from the active list. Empty = sync only."
         required: false
         type: choice
-        options:  #!cicd:remove-options!
+        options:
           - ""
   schedule:
     - cron: '0 1 * * *'   # daily 01:00 UTC
