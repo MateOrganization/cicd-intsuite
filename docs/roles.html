@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFlow Roles — Integration Suite</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🔑%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f6f8fa;
+      --bg-header: #24292f;
+      --text-primary: #24292f;
+      --text-secondary: #57606a;
+      --border-color: #d0d7de;
+      --accent-blue: #0969da;
+      --error-bg: #ffebe9;
+      --error-border: #cf222e;
+      --ok-bg: #dafbe1;
+      --ok-border: #1a7f37;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+      line-height: 1.5;
+    }
+    .header { background: var(--bg-header); color: #fff; padding: 24px 32px; margin-bottom: 24px; }
+    .header h1 { font-size: 24px; margin-bottom: 8px; }
+    .header .meta { font-size: 14px; color: #8b949e; }
+    .header .meta span { margin-right: 16px; }
+    .header .scope-note { font-size: 12px; color: #8b949e; margin-top: 8px; font-style: italic; }
+    .page-nav { margin-top: 12px; display: flex; gap: 4px; }
+    .nav-tab { display: inline-block; padding: 6px 16px; border-radius: 6px 6px 0 0; color: #8b949e; text-decoration: none; font-size: 14px; font-weight: 500; background: rgba(255,255,255,0.08); transition: background 0.15s, color 0.15s; }
+    .nav-tab:hover { background: rgba(255,255,255,0.16); color: #fff; }
+    .nav-tab.active { background: rgba(255,255,255,0.22); color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px 48px; }
+    .summary-section { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+    .summary-section h2 { margin-bottom: 12px; font-size: 18px; }
+    .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+    .summary-card { background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: 6px; padding: 14px 16px; text-align: center; cursor: pointer; transition: border-color 0.2s, box-shadow 0.2s; user-select: none; }
+    .summary-card:hover { border-color: var(--accent-blue); box-shadow: 0 0 0 1px var(--accent-blue); }
+    .summary-card.active { border-color: var(--accent-blue); box-shadow: 0 0 0 2px var(--accent-blue); background: #ddf4ff; }
+    .summary-card .number { font-size: 26px; font-weight: 700; color: var(--accent-blue); }
+    .summary-card .label { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+    .filter-bar { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+    .filter-bar input[type="text"] { padding: 7px 12px; border: 1px solid var(--border-color); border-radius: 6px; font-size: 13px; flex: 1; min-width: 180px; }
+    .filter-bar label { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
+    .filter-group-label { font-size: 12px; font-weight: 600; color: var(--text-secondary); padding: 0 2px; white-space: nowrap; }
+    .roles-wrap { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; overflow-x: auto; margin-bottom: 16px; }
+    table.roles-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 540px; }
+    table.roles-table thead th { text-align: left; padding: 10px 14px; background: var(--bg-secondary); border-bottom: 2px solid var(--border-color); font-weight: 600; white-space: nowrap; color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    tr.pkg-row td { padding: 9px 14px; background: #eaeef2; font-weight: 600; font-size: 13px; border-top: 2px solid var(--border-color); vertical-align: middle; }
+    tr.pkg-row:first-child td { border-top: none; }
+    tr.pkg-row.pkg-error td { background: #ffd7d5; border-top-color: var(--error-border); border-left: 3px solid var(--error-border); }
+    tr.iflow-row td { padding: 7px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    tr.iflow-row:last-child td { border-bottom: none; }
+    tr.iflow-row:hover td { background: #f6f8fa; }
+    tr.iflow-row.ok-row td { background: #f0fdf4; }
+    tr.iflow-row.ok-row:hover td { background: #dcfce7; }
+    tr.iflow-row.error-row td { background: #fff5f5; }
+    tr.iflow-row.error-row:hover td { background: #ffe4e4; }
+    td.col-name { max-width: 340px; word-break: break-word; overflow-wrap: break-word; }
+    td.col-id { max-width: 260px; word-break: break-word; }
+    td.col-role { max-width: 360px; word-break: break-word; overflow-wrap: break-word; }
+    code { background: #eff1f3; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+    .pkg-count { float: right; font-weight: 400; font-size: 12px; color: var(--text-secondary); }
+    .legend { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 16px 20px; font-size: 13px; color: var(--text-secondary); }
+    .legend span { margin-right: 20px; }
+    .no-results { padding: 32px; text-align: center; color: var(--text-secondary); font-size: 14px; display: none; }
+    .copyable { cursor: pointer; user-select: none; transition: background 0.15s; }
+    .copyable:hover { background: #d0d7de; border-radius: 4px; }
+    .copy-toast { position: fixed; top: 20px; right: 20px; background: #1a7f37; color: #fff; padding: 8px 16px; border-radius: 6px; font-size: 13px; z-index: 9999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+    .copy-toast.show { opacity: 1; }
+    .id-menu { position: fixed; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 10000; display: none; min-width: 180px; padding: 4px 0; font-size: 13px; }
+    .id-menu.show { display: block; }
+    .id-menu-item { display: block; width: 100%; padding: 8px 14px; border: none; background: none; text-align: left; cursor: pointer; font-size: 13px; color: var(--text-primary); text-decoration: none; white-space: nowrap; }
+    .id-menu-item:hover { background: var(--bg-secondary); }
+    .id-menu-sep { height: 1px; background: var(--border-color); margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🔑 IFlow Roles</h1>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-07-16T14:34:22Z</span><span>🌍 DEV</span></div>
+    <div class="scope-note">ℹ️ Shows the configured userRole per IFlow. IFlows without a role are not listed.</div>
+    <nav class="page-nav">
+      <a class="nav-tab" href="index.html">📊 Dashboard</a>
+      <a class="nav-tab active" href="roles.html" aria-current="page">🔑 IFlow Roles</a>
+    </nav>
+  </div>
+  <div id="copyToast" class="copy-toast"></div>
+  <div id="idMenu" class="id-menu"></div>
+  <div class="container">
+    <div class="summary-section">
+      <h2>📈 Summary</h2>
+      <div class="summary-grid">
+        <div class="summary-card" data-card-filter="defined" onclick="toggleCardFilter('defined')">
+          <div class="number">0</div>
+          <div class="label">✅ Role Defined</div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Package or IFlow name / ID..." oninput="filterRoles()">
+      <input type="text" id="roleInput" placeholder="🔍 Role (=value exact)" oninput="filterRoles()" style="max-width:200px;">
+      <span class="filter-group-label">Show:</span>
+      <label><input type="checkbox" id="showDefined" onchange="filterRoles()"> ✅ Role defined</label>
+      <label><input type="checkbox" id="showError" onchange="filterRoles()"> 🔴 Unresolved</label>
+    </div>
+    <div class="roles-wrap">
+      <table class="roles-table">
+        <thead>
+          <tr>
+            <th style="width:35%">IFlow Name</th>
+            <th style="width:28%">IFlow ID</th>
+            <th>User Role</th>
+          </tr>
+        </thead>
+        <tbody id="rolesBody">
+        </tbody>
+      </table>
+      <div class="no-results" id="noResults">No IFlows match the current filter.</div>
+    </div>
+    <div class="legend">
+      <span>✅ Role defined</span>
+      <span>🔴 Externalized parameter not found in ConfigParams</span>
+      <span style="font-size:12px;">(ext.) = value resolved from externalized parameter</span>
+    </div>
+    <script>var devUrl = "https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/";</script>
+    <script>
+      var activeCardFilter = null;
+      var copyToast = null;
+      var idMenu = null;
+
+      function copyId(text) {
+        navigator.clipboard.writeText(text).then(function() {
+          if (!copyToast) { copyToast = document.getElementById("copyToast"); }
+          copyToast.textContent = "📋 Copied: " + text;
+          copyToast.classList.add("show");
+          setTimeout(function() { copyToast.classList.remove("show"); }, 1500);
+        });
+        hideIdMenu();
+      }
+
+      function showIdMenu(event, type, id, packageId) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (!idMenu) { idMenu = document.getElementById("idMenu"); }
+        var html = "<button class=\"id-menu-item\" onclick=\"copyId(\x27" + id + "\x27)\">📋 Copy ID</button>";
+        if (devUrl) {
+          html += "<div class=\"id-menu-sep\"></div>";
+          var link = type === "package"
+            ? devUrl + "/shell/design/contentpackage/" + encodeURIComponent(id)
+            : devUrl + "/shell/design/contentpackage/" + encodeURIComponent(packageId) + "/integrationflows/" + encodeURIComponent(id);
+          html += "<a class=\"id-menu-item\" href=\"" + link + "\" target=\"_blank\" onclick=\"hideIdMenu()\">🔗 Open in DEV</a>";
+        }
+        idMenu.innerHTML = html;
+        idMenu.style.left = event.clientX + "px";
+        idMenu.style.top = event.clientY + "px";
+        idMenu.classList.add("show");
+        setTimeout(function() {
+          var r = idMenu.getBoundingClientRect();
+          if (r.right  > window.innerWidth)  { idMenu.style.left = (window.innerWidth  - r.width  - 8) + "px"; }
+          if (r.bottom > window.innerHeight)  { idMenu.style.top  = (window.innerHeight - r.height - 8) + "px"; }
+        }, 0);
+      }
+
+      function hideIdMenu() {
+        if (!idMenu) { idMenu = document.getElementById("idMenu"); }
+        idMenu.classList.remove("show");
+      }
+
+      document.addEventListener("click", function(e) {
+        if (idMenu && !idMenu.contains(e.target)) { hideIdMenu(); }
+      });
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") { hideIdMenu(); }
+      });
+
+      function toggleCardFilter(filterType) {
+        document.querySelectorAll(".summary-card").forEach(function(c) { c.classList.remove("active"); });
+        activeCardFilter = (activeCardFilter === filterType) ? null : filterType;
+        if (activeCardFilter) {
+          var card = document.querySelector(".summary-card[data-card-filter=\"" + filterType + "\"]");
+          if (card) card.classList.add("active");
+        }
+        filterRoles();
+      }
+
+      function filterRoles() {
+        var query     = document.getElementById("searchInput").value.toLowerCase();
+        var roleRaw   = document.getElementById("roleInput").value;
+        var roleExact = roleRaw.startsWith("=");
+        var roleQuery = roleExact ? roleRaw.slice(1).toLowerCase() : roleRaw.toLowerCase();
+        var showDef   = document.getElementById("showDefined").checked;
+        var showErr   = document.getElementById("showError").checked;
+        var hasFilter = showDef || showErr;
+        var pkgHasVisible = {};
+
+        document.querySelectorAll("tr.iflow-row").forEach(function(row) {
+          var pkgId      = row.getAttribute("data-pkg-id");
+          var iflowText  = (row.getAttribute("data-iflow")    || "").toLowerCase();
+          var pkgText    = (row.getAttribute("data-pkg-text") || "").toLowerCase();
+          var roleText   = (row.getAttribute("data-role")     || "").toLowerCase();
+          var status     = row.getAttribute("data-role-status") || "";
+
+          var matchesQuery  = !query     || pkgText.includes(query)     || iflowText.includes(query);
+          var matchesRole   = !roleQuery || (roleExact ? roleText === roleQuery : roleText.includes(roleQuery));
+          var matchesStatus = !hasFilter || (showDef && status === "defined") || (showErr && status === "error");
+          var matchesCard   = !activeCardFilter || status === activeCardFilter;
+
+          var visible = matchesQuery && matchesRole && matchesStatus && matchesCard;
+          row.style.display = visible ? "" : "none";
+          if (visible) { pkgHasVisible[pkgId] = true; }
+        });
+
+        var anyVisible = false;
+        document.querySelectorAll("tr.pkg-row").forEach(function(row) {
+          var pkgId = row.getAttribute("data-pkg-id");
+          var show = !!pkgHasVisible[pkgId];
+          row.style.display = show ? "" : "none";
+          if (show) anyVisible = true;
+        });
+
+        var noResults = document.getElementById("noResults");
+        if (noResults) { noResults.style.display = anyVisible ? "none" : "block"; }
+      }
+    </script>
+  </div>
+</body>
+</html>
