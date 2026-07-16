@@ -34,7 +34,6 @@ on:
         type: choice
         options:
           - ""
-          - "3-tier landscape (DEV / TST / PRD)"
           - "Access Policies"
           - "Edge Integration Cell (EIC)"
       remove-scenario:
@@ -43,6 +42,7 @@ on:
         type: choice
         options:
           - ""
+          - "3-tier landscape (DEV / TST / PRD)"
           - "BTP Dashboard Generator"
   schedule:
     - cron: '0 1 * * *'   # daily 01:00 UTC
