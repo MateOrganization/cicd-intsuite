@@ -1,0 +1,98 @@
+{
+  "PackageIntegrationFlowParameters": {
+    "PackageName": "MigrationTester_IA_Usage",
+    "PackageID": "MigrationTester",
+    "Artifacts": [
+      {
+        "ArtifactID": "IF_Tester_Generic_FLandIA",
+        "ArtifactName": "IF_Tester_Generic_FLandIA",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectIA",
+        "ArtifactName": "IF_Tester_DirectIA",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectUDF",
+        "ArtifactName": "IF_Tester_DirectUDF",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "IF_Tester_OnlyFL",
+        "ArtifactName": "IF_Tester_OnlyFL",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectIA_WithCommentedIA",
+        "ArtifactName": "IF_Tester_DirectIA_WithCommentedIA",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "IF_Tester_Generic_FLandIA_withCommentedIA",
+        "ArtifactName": "IF_Tester_Generic_FLandIA_withCommentedIA",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

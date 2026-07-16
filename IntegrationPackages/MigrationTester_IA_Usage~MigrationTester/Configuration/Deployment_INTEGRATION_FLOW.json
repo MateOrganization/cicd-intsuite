@@ -1,0 +1,56 @@
+{
+  "PackageIntegrationFlowDeployments": {
+    "PackageName": "MigrationTester_IA_Usage",
+    "PackageID": "MigrationTester",
+    "IntegrationFlows": [
+      {
+        "ArtifactID": "IF_Tester_Generic_FLandIA",
+        "ArtifactName": "IF_Tester_Generic_FLandIA",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectIA",
+        "ArtifactName": "IF_Tester_DirectIA",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectUDF",
+        "ArtifactName": "IF_Tester_DirectUDF",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "IF_Tester_OnlyFL",
+        "ArtifactName": "IF_Tester_OnlyFL",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "IF_Tester_DirectIA_WithCommentedIA",
+        "ArtifactName": "IF_Tester_DirectIA_WithCommentedIA",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "IF_Tester_Generic_FLandIA_withCommentedIA",
+        "ArtifactName": "IF_Tester_Generic_FLandIA_withCommentedIA",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      }
+    ]
+  }
+}
