@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19T02:51:45Z",
+  "generated": "2026-07-20T03:20:19Z",
   "environments": [
     "DEV",
     "TST"
@@ -5709,7 +5709,8 @@
       "name": "Cloud Integration Pipeline - Generic Inbound",
       "source": "btp",
       "foundOnEnvironments": [
-        "DEV"
+        "DEV",
+        "TST"
       ],
       "gitConfig": {
         "found": false,
@@ -5731,8 +5732,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.9"
             }
           }
         },
@@ -5751,8 +5752,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
             }
           }
         }
@@ -5871,7 +5872,8 @@
       "name": "Cloud Integration Pipeline - Generic Outbound",
       "source": "btp",
       "foundOnEnvironments": [
-        "DEV"
+        "DEV",
+        "TST"
       ],
       "gitConfig": {
         "found": false,
@@ -5893,8 +5895,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             }
           }
         },
@@ -5913,8 +5915,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
             }
           }
         },
@@ -5933,8 +5935,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
             }
           }
         }
@@ -6341,7 +6343,8 @@
       "name": "Cloud Integration Pipeline - Generic Pipelines",
       "source": "btp",
       "foundOnEnvironments": [
-        "DEV"
+        "DEV",
+        "TST"
       ],
       "gitConfig": {
         "found": false,
@@ -6363,8 +6366,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
             }
           }
         },
@@ -6383,8 +6386,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
             }
           }
         },
@@ -6403,8 +6406,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
             }
           }
         },
@@ -6423,8 +6426,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.5"
             }
           }
         },
@@ -6443,8 +6446,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             }
           }
         }
@@ -6787,6 +6790,420 @@
               "logLevel": null,
               "runtimeStatus": null,
               "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "CloudIntegrationPipelineTemplates",
+      "name": "Cloud Integration Pipeline - Templates",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "TST"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration",
+          "name": "Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.error.handling",
+          "name": "Pipeline v2 Template - Custom Error Handling",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.exit",
+          "name": "Pipeline v2 Template - Custom Exit",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo",
+          "name": "Pipeline v2 Template Step01 - Inbound Processing At Least Once",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo",
+          "name": "Pipeline v2 Template Step01 - Inbound Processing Exactly Once",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync",
+          "name": "Pipeline v2 Template Step01 - Inbound Processing Synchronous",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion",
+          "name": "Pipeline v2 Template Step03 - Inbound Conversion",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination",
+          "name": "Pipeline v2 Template Step04 - Custom Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts",
+          "name": "Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Exchange Properties",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd",
+          "name": "Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Extended Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination",
+          "name": "Pipeline v2 Template Step04 - Reuse Extended Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination",
+          "name": "Pipeline v2 Template Step05 - Custom Interface Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many to Generic IDoc Outbound",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic IDoc Outbound",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic XI Outbound",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync",
+          "name": "Pipeline v2 Template Step07 - Outbound Processing Synchronous",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             }
           }
         }
@@ -27394,7 +27811,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -44451,7 +44868,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -48015,7 +48432,8 @@
       "name": "PIP Samples - Little Helpers",
       "source": "btp",
       "foundOnEnvironments": [
-        "DEV"
+        "DEV",
+        "TST"
       ],
       "gitConfig": {
         "found": false,
@@ -48037,8 +48455,48 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
+            }
+          }
+        },
+        {
+          "id": "PIP_Custom_PostProcessing",
+          "name": "PIP_Custom_PostProcessing",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
               "runtimeStatus": null,
               "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            }
+          }
+        },
+        {
+          "id": "PIP_Custom_PreProcessing",
+          "name": "PIP_Custom_PreProcessing",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48057,8 +48515,28 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
+            }
+          }
+        },
+        {
+          "id": "PIP_FetchTenantDetails",
+          "name": "PIP_FetchTenantDetails",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
               "runtimeStatus": null,
               "runtimeVersion": null
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48077,8 +48555,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48097,8 +48575,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "ERROR",
+              "runtimeVersion": "1.0.1"
             }
           }
         },
@@ -48117,8 +48595,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
             }
           }
         }
@@ -48129,7 +48607,8 @@
       "name": "PIP Samples - Scenario 1",
       "source": "btp",
       "foundOnEnvironments": [
-        "DEV"
+        "DEV",
+        "TST"
       ],
       "gitConfig": {
         "found": false,
@@ -48151,8 +48630,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.5"
             }
           }
         },
@@ -48171,8 +48650,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48191,8 +48670,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             }
           }
         },
@@ -48211,8 +48690,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48231,8 +48710,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48251,8 +48730,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48271,8 +48750,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48291,8 +48770,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48311,8 +48790,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             }
           }
         },
@@ -48331,8 +48810,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         },
@@ -48351,8 +48830,8 @@
             "TST": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             }
           }
         }
@@ -74088,8 +74567,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 379,
+    "btpPackageCount": 380,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 379
+    "totalPackageCount": 380
   }
 }

@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-07-19T02:51:45Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://805b7b6ctrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 379 BTP packages</span>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-07-20T03:20:19Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://805b7b6ctrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 380 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">379</div>
+          <div class="number">380</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">378</div>
+          <div class="number">374</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">378</div>
+          <div class="number">379</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 378 packages missing entirely</div>
+          <div class="sub-label">🔴 379 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 378 package(s) and 3435 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 379 package(s) and 3458 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -2644,10 +2644,10 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericInbound Cloud Integration Pipeline - Generic Inbound" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericInbound Cloud Integration Pipeline - Generic Inbound" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Inbound (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericInbound','','DEV','Cloud Integration Pipeline - Generic Inbound','false')" title="Click for options">CloudIntegrationPipelineGenericInbound</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Inbound (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericInbound','','DEV,TST','Cloud Integration Pipeline - Generic Inbound','false')" title="Click for options">CloudIntegrationPipelineGenericInbound</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration</div>
       </div>
       <div class="package-body">
       <table>
@@ -2662,15 +2662,15 @@
         <tbody>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc Pipeline v2 Generic Step01 - Inbound Processing for Idoc" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step01 - Inbound Processing for Idoc">❓ Pipeline v2 Generic Step01 - Inbound Processing for Idoc</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc','CloudIntegrationPipelineGenericInbound','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc','CloudIntegrationPipelineGenericInbound','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.8</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.9</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi Pipeline v2 Generic Step01 - Inbound Processing for XI" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step01 - Inbound Processing for XI">❓ Pipeline v2 Generic Step01 - Inbound Processing for XI</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi','CloudIntegrationPipelineGenericInbound','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi','CloudIntegrationPipelineGenericInbound','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.6</span></td>
           </tr>
         </tbody>
       </table>
@@ -2740,10 +2740,10 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericOutbound Cloud Integration Pipeline - Generic Outbound" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericOutbound Cloud Integration Pipeline - Generic Outbound" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Outbound (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericOutbound','','DEV','Cloud Integration Pipeline - Generic Outbound','false')" title="Click for options">CloudIntegrationPipelineGenericOutbound</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Outbound (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericOutbound','','DEV,TST','Cloud Integration Pipeline - Generic Outbound','false')" title="Click for options">CloudIntegrationPipelineGenericOutbound</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration</div>
       </div>
       <div class="package-body">
       <table>
@@ -2758,21 +2758,21 @@
         <tbody>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing Pipeline v2 Generic Step06 - Outbound Processing" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step06 - Outbound Processing">❓ Pipeline v2 Generic Step06 - Outbound Processing</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing','CloudIntegrationPipelineGenericOutbound','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing','CloudIntegrationPipelineGenericOutbound','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc Pipeline v2 Generic Step08 - Outbound Processing for Idoc" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step08 - Outbound Processing for Idoc">❓ Pipeline v2 Generic Step08 - Outbound Processing for Idoc</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc','CloudIntegrationPipelineGenericOutbound','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc','CloudIntegrationPipelineGenericOutbound','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi Pipeline v2 Generic Step08 - Outbound Processing for XI" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step08 - Outbound Processing for XI">❓ Pipeline v2 Generic Step08 - Outbound Processing for XI</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi','CloudIntegrationPipelineGenericOutbound','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi','CloudIntegrationPipelineGenericOutbound','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
           </tr>
         </tbody>
       </table>
@@ -2960,10 +2960,10 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericPipelines Cloud Integration Pipeline - Generic Pipelines" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="CloudIntegrationPipelineGenericPipelines Cloud Integration Pipeline - Generic Pipelines" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Pipelines (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericPipelines','','DEV','Cloud Integration Pipeline - Generic Pipelines','false')" title="Click for options">CloudIntegrationPipelineGenericPipelines</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Generic Pipelines (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineGenericPipelines','','DEV,TST','Cloud Integration Pipeline - Generic Pipelines','false')" title="Click for options">CloudIntegrationPipelineGenericPipelines</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration</div>
       </div>
       <div class="package-body">
       <table>
@@ -2978,33 +2978,33 @@
         <tbody>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing Pipeline v2 Generic Step02 - Inbound Processing" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step02 - Inbound Processing">❓ Pipeline v2 Generic Step02 - Inbound Processing</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing','CloudIntegrationPipelineGenericPipelines','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing','CloudIntegrationPipelineGenericPipelines','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.6</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async Pipeline v2 Generic Step02 - Integrated Messaging Runtime Async" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step02 - Integrated Messaging Runtime Async">❓ Pipeline v2 Generic Step02 - Integrated Messaging Runtime Async</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async','CloudIntegrationPipelineGenericPipelines','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async','CloudIntegrationPipelineGenericPipelines','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.6</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync Pipeline v2 Generic Step02 - Integrated Messaging Runtime Sync" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step02 - Integrated Messaging Runtime Sync">❓ Pipeline v2 Generic Step02 - Integrated Messaging Runtime Sync</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync','CloudIntegrationPipelineGenericPipelines','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync','CloudIntegrationPipelineGenericPipelines','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.6</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination Pipeline v2 Generic Step04 - Receiver Determination" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step04 - Receiver Determination">❓ Pipeline v2 Generic Step04 - Receiver Determination</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination','CloudIntegrationPipelineGenericPipelines','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination','CloudIntegrationPipelineGenericPipelines','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination Pipeline v2 Generic Step05 - Interface Determination" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 Generic Step05 - Interface Determination">❓ Pipeline v2 Generic Step05 - Interface Determination</td>
-            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination','CloudIntegrationPipelineGenericPipelines','DEV','','','DEV')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination</code></td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination','CloudIntegrationPipelineGenericPipelines','DEV,TST','','','DEV,TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
           </tr>
         </tbody>
       </table>
@@ -3155,6 +3155,146 @@
             <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination.EIC"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination.EIC','CloudIntegrationPipelineGenericPipelines.EIC','DEV','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination.EIC</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="CloudIntegrationPipelineTemplates Cloud Integration Pipeline - Templates" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Cloud Integration Pipeline - Templates (<code class="copyable" onclick="showIdMenu(event,'package','CloudIntegrationPipelineTemplates','','TST','Cloud Integration Pipeline - Templates','false')" title="Click for options">CloudIntegrationPipelineTemplates</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> DEV</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://805b7b6ctrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration">❓ Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration','CloudIntegrationPipelineTemplates','TST','','','TST')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.custom.error.handling Pipeline v2 Template - Custom Error Handling" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template - Custom Error Handling">❓ Pipeline v2 Template - Custom Error Handling</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.custom.error.handling"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.custom.error.handling','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.custom.error.handling</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.custom.exit Pipeline v2 Template - Custom Exit" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template - Custom Exit">❓ Pipeline v2 Template - Custom Exit</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.custom.exit"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.custom.exit','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.custom.exit</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo Pipeline v2 Template Step01 - Inbound Processing At Least Once" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step01 - Inbound Processing At Least Once">❓ Pipeline v2 Template Step01 - Inbound Processing At Least Once</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo Pipeline v2 Template Step01 - Inbound Processing Exactly Once" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step01 - Inbound Processing Exactly Once">❓ Pipeline v2 Template Step01 - Inbound Processing Exactly Once</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync Pipeline v2 Template Step01 - Inbound Processing Synchronous" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step01 - Inbound Processing Synchronous">❓ Pipeline v2 Template Step01 - Inbound Processing Synchronous</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion Pipeline v2 Template Step03 - Inbound Conversion" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step03 - Inbound Conversion">❓ Pipeline v2 Template Step03 - Inbound Conversion</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination Pipeline v2 Template Step04 - Custom Receiver Determination" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step04 - Custom Receiver Determination">❓ Pipeline v2 Template Step04 - Custom Receiver Determination</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Exchange Properties" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Exchange Properties">❓ Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Exchange Properties</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Extended Receiver Determination" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Extended Receiver Determination">❓ Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Extended Receiver Determination</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination Pipeline v2 Template Step04 - Reuse Extended Receiver Determination" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step04 - Reuse Extended Receiver Determination">❓ Pipeline v2 Template Step04 - Reuse Extended Receiver Determination</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination Pipeline v2 Template Step05 - Custom Interface Determination" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step05 - Custom Interface Determination">❓ Pipeline v2 Template Step05 - Custom Interface Determination</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime">❓ Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc Pipeline v2 Template Step07 - Outbound Processing One-to-Many to Generic IDoc Outbound" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing One-to-Many to Generic IDoc Outbound">❓ Pipeline v2 Template Step07 - Outbound Processing One-to-Many to Generic IDoc Outbound</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types">❓ Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type">❓ Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p Pipeline v2 Template Step07 - Outbound Processing Point-to-Point" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing Point-to-Point">❓ Pipeline v2 Template Step07 - Outbound Processing Point-to-Point</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic IDoc Outbound" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic IDoc Outbound">❓ Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic IDoc Outbound</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic XI Outbound" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic XI Outbound">❓ Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic XI Outbound</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync Pipeline v2 Template Step07 - Outbound Processing Synchronous" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Template Step07 - Outbound Processing Synchronous">❓ Pipeline v2 Template Step07 - Outbound Processing Synchronous</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync','CloudIntegrationPipelineTemplates','TST','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
           </tr>
         </tbody>
       </table>
@@ -10362,9 +10502,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="I060120 I060120" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I060120 (<code class="copyable" onclick="showIdMenu(event,'package','I060120','','DEV','I060120','false')" title="Click for options">I060120</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 I060120 (<code class="copyable" onclick="showIdMenu(event,'package','I060120','','DEV','I060120','false')" title="Click for options">I060120</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -10389,10 +10529,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="Mock_AMQPConsumer_with_AMQPProducer_to_EM Mock AMQPConsumer with AMQPProducer to EM" data-loglevel="">
-            <td class="iflow-name" title="Mock AMQPConsumer with AMQPProducer to EM">❓ Mock AMQPConsumer with AMQPProducer to EM</td>
+          <tr class="error-row" data-iflow="Mock_AMQPConsumer_with_AMQPProducer_to_EM Mock AMQPConsumer with AMQPProducer to EM" data-loglevel="">
+            <td class="iflow-name" title="Mock AMQPConsumer with AMQPProducer to EM">🔴 Mock AMQPConsumer with AMQPProducer to EM</td>
             <td class="iflow-id" title="Mock_AMQPConsumer_with_AMQPProducer_to_EM"><code class="copyable" onclick="showIdMenu(event,'iflow','Mock_AMQPConsumer_with_AMQPProducer_to_EM','I060120','DEV','','','DEV')" title="Click for options">Mock_AMQPConsumer_with_AMQPProducer_to_EM</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.2</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="Mock_AMQPConsumer_with_AMQPProducer_to_EMIS Mock AMQPConsumer with AMQPProducer to EMIS" data-loglevel="">
@@ -16547,9 +16687,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="IPI561732Test IP_I561732_Test" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 IP_I561732_Test (<code class="copyable" onclick="showIdMenu(event,'package','IPI561732Test','','DEV','IP_I561732_Test','false')" title="Click for options">IPI561732Test</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 IP_I561732_Test (<code class="copyable" onclick="showIdMenu(event,'package','IPI561732Test','','DEV','IP_I561732_Test','false')" title="Click for options">IPI561732Test</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -16658,10 +16798,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="SFTP_2_SFTP SFTP_2_SFTP" data-loglevel="">
-            <td class="iflow-name" title="SFTP_2_SFTP">❓ SFTP_2_SFTP</td>
+          <tr class="error-row" data-iflow="SFTP_2_SFTP SFTP_2_SFTP" data-loglevel="">
+            <td class="iflow-name" title="SFTP_2_SFTP">🔴 SFTP_2_SFTP</td>
             <td class="iflow-id" title="SFTP_2_SFTP"><code class="copyable" onclick="showIdMenu(event,'iflow','SFTP_2_SFTP','IPI561732Test','DEV','','','DEV')" title="Click for options">SFTP_2_SFTP</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.2</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="TEST_AUTHEN TEST_AUTHEN" data-loglevel="">
@@ -18391,10 +18531,10 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="PIPSamplesLittleHelpers PIP Samples - Little Helpers" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 PIP Samples - Little Helpers (<code class="copyable" onclick="showIdMenu(event,'package','PIPSamplesLittleHelpers','','DEV','PIP Samples - Little Helpers','false')" title="Click for options">PIPSamplesLittleHelpers</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+    <div class="package-section collapsed" data-package="PIPSamplesLittleHelpers PIP Samples - Little Helpers" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 PIP Samples - Little Helpers (<code class="copyable" onclick="showIdMenu(event,'package','PIPSamplesLittleHelpers','','DEV,TST','PIP Samples - Little Helpers','false')" title="Click for options">PIPSamplesLittleHelpers</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status</div>
       </div>
       <div class="package-body">
       <table>
@@ -18409,42 +18549,60 @@
         <tbody>
           <tr class="notingit-row" data-iflow="PIP_Custom_ErrorHandling PIP_Custom_ErrorHandling" data-loglevel="">
             <td class="iflow-name" title="PIP_Custom_ErrorHandling">❓ PIP_Custom_ErrorHandling</td>
-            <td class="iflow-id" title="PIP_Custom_ErrorHandling"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Custom_ErrorHandling','PIPSamplesLittleHelpers','DEV','','','')" title="Click for options">PIP_Custom_ErrorHandling</code></td>
+            <td class="iflow-id" title="PIP_Custom_ErrorHandling"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Custom_ErrorHandling','PIPSamplesLittleHelpers','DEV,TST','','','TST')" title="Click for options">PIP_Custom_ErrorHandling</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="PIP_Custom_PostProcessing PIP_Custom_PostProcessing" data-loglevel="">
+            <td class="iflow-name" title="PIP_Custom_PostProcessing">❓ PIP_Custom_PostProcessing</td>
+            <td class="iflow-id" title="PIP_Custom_PostProcessing"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Custom_PostProcessing','PIPSamplesLittleHelpers','TST','','','TST')" title="Click for options">PIP_Custom_PostProcessing</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="PIP_Custom_PreProcessing PIP_Custom_PreProcessing" data-loglevel="">
+            <td class="iflow-name" title="PIP_Custom_PreProcessing">❓ PIP_Custom_PreProcessing</td>
+            <td class="iflow-id" title="PIP_Custom_PreProcessing"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Custom_PreProcessing','PIPSamplesLittleHelpers','TST','','','TST')" title="Click for options">PIP_Custom_PreProcessing</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIP_EncodeAndUpload_XSLT PIP_EncodeAndUpload_XSLT" data-loglevel="">
             <td class="iflow-name" title="PIP_EncodeAndUpload_XSLT">❓ PIP_EncodeAndUpload_XSLT</td>
-            <td class="iflow-id" title="PIP_EncodeAndUpload_XSLT"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_EncodeAndUpload_XSLT','PIPSamplesLittleHelpers','DEV','','','DEV')" title="Click for options">PIP_EncodeAndUpload_XSLT</code></td>
+            <td class="iflow-id" title="PIP_EncodeAndUpload_XSLT"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_EncodeAndUpload_XSLT','PIPSamplesLittleHelpers','DEV,TST','','','DEV,TST')" title="Click for options">PIP_EncodeAndUpload_XSLT</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="PIP_FetchTenantDetails PIP_FetchTenantDetails" data-loglevel="">
+            <td class="iflow-name" title="PIP_FetchTenantDetails">❓ PIP_FetchTenantDetails</td>
+            <td class="iflow-id" title="PIP_FetchTenantDetails"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_FetchTenantDetails','PIPSamplesLittleHelpers','TST','','','TST')" title="Click for options">PIP_FetchTenantDetails</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIP_Mocked_Receiver PIP_Mocked_Receiver" data-loglevel="">
             <td class="iflow-name" title="PIP_Mocked_Receiver">❓ PIP_Mocked_Receiver</td>
-            <td class="iflow-id" title="PIP_Mocked_Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Mocked_Receiver','PIPSamplesLittleHelpers','DEV','','','DEV')" title="Click for options">PIP_Mocked_Receiver</code></td>
+            <td class="iflow-id" title="PIP_Mocked_Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Mocked_Receiver','PIPSamplesLittleHelpers','DEV,TST','','','DEV,TST')" title="Click for options">PIP_Mocked_Receiver</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="PIP_Mocked_XI_Sender PIP_Mocked_XI_Sender" data-loglevel="">
-            <td class="iflow-name" title="PIP_Mocked_XI_Sender">❓ PIP_Mocked_XI_Sender</td>
-            <td class="iflow-id" title="PIP_Mocked_XI_Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Mocked_XI_Sender','PIPSamplesLittleHelpers','DEV','','','DEV')" title="Click for options">PIP_Mocked_XI_Sender</code></td>
+          <tr class="error-row" data-iflow="PIP_Mocked_XI_Sender PIP_Mocked_XI_Sender" data-loglevel="">
+            <td class="iflow-name" title="PIP_Mocked_XI_Sender">🔴 PIP_Mocked_XI_Sender</td>
+            <td class="iflow-id" title="PIP_Mocked_XI_Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_Mocked_XI_Sender','PIPSamplesLittleHelpers','DEV,TST','','','DEV,TST')" title="Click for options">PIP_Mocked_XI_Sender</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.1</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIP_ReadAndDecode_XSLT PIP_ReadAndDecode_XSLT" data-loglevel="">
             <td class="iflow-name" title="PIP_ReadAndDecode_XSLT">❓ PIP_ReadAndDecode_XSLT</td>
-            <td class="iflow-id" title="PIP_ReadAndDecode_XSLT"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_ReadAndDecode_XSLT','PIPSamplesLittleHelpers','DEV','','','DEV')" title="Click for options">PIP_ReadAndDecode_XSLT</code></td>
+            <td class="iflow-id" title="PIP_ReadAndDecode_XSLT"><code class="copyable" onclick="showIdMenu(event,'iflow','PIP_ReadAndDecode_XSLT','PIPSamplesLittleHelpers','DEV,TST','','','DEV,TST')" title="Click for options">PIP_ReadAndDecode_XSLT</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
           </tr>
         </tbody>
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="PIPSamplesScenario1 PIP Samples - Scenario 1" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="PIPSamplesScenario1 PIP Samples - Scenario 1" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 PIP Samples - Scenario 1 (<code class="copyable" onclick="showIdMenu(event,'package','PIPSamplesScenario1','','DEV','PIP Samples - Scenario 1','false')" title="Click for options">PIPSamplesScenario1</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 PIP Samples - Scenario 1 (<code class="copyable" onclick="showIdMenu(event,'package','PIPSamplesScenario1','','DEV,TST','PIP Samples - Scenario 1','false')" title="Click for options">PIPSamplesScenario1</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration</div>
       </div>
       <div class="package-body">
       <table>
@@ -18459,69 +18617,69 @@
         <tbody>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step01 PIPSamplesScenario1_Step01" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step01">❓ PIPSamplesScenario1_Step01</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step01"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step01','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step01</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step01"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step01','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step01</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step03 PIPSamplesScenario1_Step03" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step03">❓ PIPSamplesScenario1_Step03</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step03"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step03','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step03</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step03"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step03','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step03</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step06_OutboundProcessing_RCV1 PIPSamplesScenario1_Step06_OutboundProcessing_RCV1" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step06_OutboundProcessing_RCV1">❓ PIPSamplesScenario1_Step06_OutboundProcessing_RCV1</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step06_OutboundProcessing_RCV1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step06_OutboundProcessing_RCV1','PIPSamplesScenario1','DEV','','','')" title="Click for options">PIPSamplesScenario1_Step06_OutboundProcessing_RCV1</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step06_OutboundProcessing_RCV1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step06_OutboundProcessing_RCV1','PIPSamplesScenario1','DEV,TST','','','TST')" title="Click for options">PIPSamplesScenario1_Step06_OutboundProcessing_RCV1</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV1_IF1 PIPSamplesScenario1_Step07_RCV1_IF1" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV1_IF1">❓ PIPSamplesScenario1_Step07_RCV1_IF1</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF1','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF1</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF1','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF1</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV1_IF2 PIPSamplesScenario1_Step07_RCV1_IF2" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV1_IF2">❓ PIPSamplesScenario1_Step07_RCV1_IF2</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF2','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF2</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF2','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF2</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV1_IF3 PIPSamplesScenario1_Step07_RCV1_IF3" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV1_IF3">❓ PIPSamplesScenario1_Step07_RCV1_IF3</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF3"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF3','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF3</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV1_IF3"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV1_IF3','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV1_IF3</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV2_IF1 PIPSamplesScenario1_Step07_RCV2_IF1" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV2_IF1">❓ PIPSamplesScenario1_Step07_RCV2_IF1</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV2_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV2_IF1','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV2_IF1</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV2_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV2_IF1','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV2_IF1</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV2_IF2 PIPSamplesScenario1_Step07_RCV2_IF2" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV2_IF2">❓ PIPSamplesScenario1_Step07_RCV2_IF2</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV2_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV2_IF2','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV2_IF2</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV2_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV2_IF2','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV2_IF2</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV3_IF1 PIPSamplesScenario1_Step07_RCV3_IF1" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV3_IF1">❓ PIPSamplesScenario1_Step07_RCV3_IF1</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF1','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF1</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF1"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF1','PIPSamplesScenario1','DEV,TST','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF1</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV3_IF2 PIPSamplesScenario1_Step07_RCV3_IF2" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV3_IF2">❓ PIPSamplesScenario1_Step07_RCV3_IF2</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF2','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF2</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF2"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF2','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF2</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="PIPSamplesScenario1_Step07_RCV3_IF3 PIPSamplesScenario1_Step07_RCV3_IF3" data-loglevel="">
             <td class="iflow-name" title="PIPSamplesScenario1_Step07_RCV3_IF3">❓ PIPSamplesScenario1_Step07_RCV3_IF3</td>
-            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF3"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF3','PIPSamplesScenario1','DEV','','','DEV')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF3</code></td>
+            <td class="iflow-id" title="PIPSamplesScenario1_Step07_RCV3_IF3"><code class="copyable" onclick="showIdMenu(event,'iflow','PIPSamplesScenario1_Step07_RCV3_IF3','PIPSamplesScenario1','DEV,TST','','','DEV,TST')" title="Click for options">PIPSamplesScenario1_Step07_RCV3_IF3</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
         </tbody>
       </table>
