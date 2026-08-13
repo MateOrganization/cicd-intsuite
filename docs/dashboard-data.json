@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T02:10:00Z",
+  "generated": "2026-08-13T02:14:35Z",
   "environments": [
     "DEV",
     "TST"
@@ -28317,8 +28317,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -30053,6 +30053,26 @@
         {
           "id": "Pipeline_Generic_Step06_-_Outbound_Processing_SpecificReceiver",
           "name": "Pipeline Generic Step06 - Outbound Processing_SpecificReceiver",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_v2_Generic_Step06_-_Outbound_Processing_for_Large_Messages",
+          "name": "Pipeline v2 Generic Step06 - Outbound Processing for Large Messages",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
