@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T01:46:01Z",
+  "generated": "2026-08-18T01:35:22Z",
   "environments": [
     "DEV",
     "TST"
@@ -5927,7 +5927,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -6067,80 +6067,6 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.10.11.2025_7.19.51",
-          "name": "Pipeline v2 Generic Step08 - Outbound Processing for XI",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "CloudIntegrationPipelineGenericOutbound.D039994New",
-      "name": "Cloud Integration Pipeline - Generic Outbound.D039994New",
-      "source": "btp",
-      "foundOnEnvironments": [
-        "DEV"
-      ],
-      "gitConfig": {
-        "found": false,
-        "jsonFormat": null
-      },
-      "iflows": [
-        {
-          "id": "com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing.D039994New",
-          "name": "Pipeline v2 Generic Step06 - Outbound Processing",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc.D039994New",
-          "name": "Pipeline v2 Generic Step08 - Outbound Processing for Idoc",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.D039994New",
           "name": "Pipeline v2 Generic Step08 - Outbound Processing for XI",
           "source": "btp",
           "hasGitConfig": false,
@@ -6679,7 +6605,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -75866,6 +75792,140 @@
         },
         {
           "id": "Pipeline_Template_-_Restart_Job",
+          "name": "Pipeline DS Retry - Template - Restart Job",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "processintegrationpipelineextensionrestartviadatastore.D039994",
+      "name": "Process Integration Pipeline Extension - Restart via Data Store.D039994",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "Pipeline_API_-_Data_Store_Manage_Entries.D039994",
+          "name": "Pipeline API - Data Store Manage Entries",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_API_-_Data_Store_Manage_Retries.D039994",
+          "name": "Pipeline API - Data Store Manage Retries",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_API_-_Restart_Job_Log.D039994",
+          "name": "Pipeline API - Restart Job Log",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_Template_-_Custom_Error_Handling_with_Data_Stores.D039994",
+          "name": "Pipeline DS Retry - Custom Error Handling with Data Stores",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_DS_Retry_-_Restart_Executor_from_Data_Store_to_JMS.D039994",
+          "name": "Pipeline DS Retry - Restart Executor from Data Store to JMS",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Pipeline_Template_-_Restart_Job.D039994",
           "name": "Pipeline DS Retry - Template - Restart Job",
           "source": "btp",
           "hasGitConfig": false,
