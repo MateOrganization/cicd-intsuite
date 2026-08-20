@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T01:37:25Z",
+  "generated": "2026-08-20T01:41:38Z",
   "environments": [
     "DEV",
     "TST"
@@ -27901,7 +27901,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -55779,26 +55779,6 @@
       },
       "iflows": [
         {
-          "id": "Preload_Value_Mapping_for_Jira_Users",
-          "name": "Preload Value Mapping for Jira Users",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
           "id": "Synchronize_Tasks_from_Jira_to_SAP_Cloud_ALM",
           "name": "Synchronize Tasks from Jira to SAP Cloud ALM",
           "source": "btp",
@@ -70109,7 +70089,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.5"
             },
             "TST": {

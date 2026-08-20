@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-08-19T01:37:25Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 392 BTP packages</span>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-08-20T01:41:38Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 392 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -290,7 +290,7 @@
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 391 package(s) and 3519 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 391 package(s) and 3518 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -10540,9 +10540,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="I060120 I060120" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I060120 (<code class="copyable" onclick="showIdMenu(event,'package','I060120','','DEV','I060120','false')" title="Click for options">I060120</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 I060120 (<code class="copyable" onclick="showIdMenu(event,'package','I060120','','DEV','I060120','false')" title="Click for options">I060120</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -10573,10 +10573,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="Mock_AMQPConsumer_with_AMQPProducer_to_EMIS Mock AMQPConsumer with AMQPProducer to EMIS" data-loglevel="">
-            <td class="iflow-name" title="Mock AMQPConsumer with AMQPProducer to EMIS">❓ Mock AMQPConsumer with AMQPProducer to EMIS</td>
+          <tr class="error-row" data-iflow="Mock_AMQPConsumer_with_AMQPProducer_to_EMIS Mock AMQPConsumer with AMQPProducer to EMIS" data-loglevel="">
+            <td class="iflow-name" title="Mock AMQPConsumer with AMQPProducer to EMIS">🔴 Mock AMQPConsumer with AMQPProducer to EMIS</td>
             <td class="iflow-id" title="Mock_AMQPConsumer_with_AMQPProducer_to_EMIS"><code class="copyable" onclick="showIdMenu(event,'iflow','Mock_AMQPConsumer_with_AMQPProducer_to_EMIS','I060120','DEV','','','DEV')" title="Click for options">Mock_AMQPConsumer_with_AMQPProducer_to_EMIS</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.2</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.2</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="Mock_AMQPConsumer_with_EM Mock AMQPConsumer with EM" data-loglevel="">
@@ -21369,12 +21369,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notingit-row" data-iflow="Preload_Value_Mapping_for_Jira_Users Preload Value Mapping for Jira Users" data-loglevel="">
-            <td class="iflow-name" title="Preload Value Mapping for Jira Users">❓ Preload Value Mapping for Jira Users</td>
-            <td class="iflow-id" title="Preload_Value_Mapping_for_Jira_Users"><code class="copyable" onclick="showIdMenu(event,'iflow','Preload_Value_Mapping_for_Jira_Users','SAPCloudALMandJiraTaskSynchronization','DEV','','','')" title="Click for options">Preload_Value_Mapping_for_Jira_Users</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
           <tr class="notingit-row" data-iflow="Synchronize_Tasks_from_Jira_to_SAP_Cloud_ALM Synchronize Tasks from Jira to SAP Cloud ALM" data-loglevel="">
             <td class="iflow-name" title="Synchronize Tasks from Jira to SAP Cloud ALM">❓ Synchronize Tasks from Jira to SAP Cloud ALM</td>
             <td class="iflow-id" title="Synchronize_Tasks_from_Jira_to_SAP_Cloud_ALM"><code class="copyable" onclick="showIdMenu(event,'iflow','Synchronize_Tasks_from_Jira_to_SAP_Cloud_ALM','SAPCloudALMandJiraTaskSynchronization','DEV','','','')" title="Click for options">Synchronize_Tasks_from_Jira_to_SAP_Cloud_ALM</code></td>
@@ -26969,10 +26963,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="EM_AMQP_I307681-Topic EM_AMQP_I307681-Topic" data-loglevel="">
-            <td class="iflow-name" title="EM_AMQP_I307681-Topic">❓ EM_AMQP_I307681-Topic</td>
+          <tr class="error-row" data-iflow="EM_AMQP_I307681-Topic EM_AMQP_I307681-Topic" data-loglevel="">
+            <td class="iflow-name" title="EM_AMQP_I307681-Topic">🔴 EM_AMQP_I307681-Topic</td>
             <td class="iflow-id" title="EM_AMQP_I307681-Topic"><code class="copyable" onclick="showIdMenu(event,'iflow','EM_AMQP_I307681-Topic','Tests','DEV','','','DEV')" title="Click for options">EM_AMQP_I307681-Topic</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.5</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.5</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="Exception Exception" data-loglevel="">
