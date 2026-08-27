@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-08-26T01:49:29Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 403 BTP packages</span>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-08-27T07:34:23Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 402 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">403</div>
+          <div class="number">402</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">403</div>
+          <div class="number">402</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">402</div>
+          <div class="number">401</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 402 packages missing entirely</div>
+          <div class="sub-label">🔴 401 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 402 package(s) and 3544 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 401 package(s) and 3543 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -1413,32 +1413,6 @@
             <td class="iflow-name" title="calm_itsm_integration_usecase3">❓ calm_itsm_integration_usecase3</td>
             <td class="iflow-id" title="usecase3_copy"><code class="copyable" onclick="showIdMenu(event,'iflow','usecase3_copy','CALMITSMintegration','DEV','','','DEV')" title="Click for options">usecase3_copy</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-    </div>
-    <div class="package-section collapsed" data-package="CALMJira CALM <-> Jira" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 CALM <-> Jira (<code class="copyable" onclick="showIdMenu(event,'package','CALMJira','','DEV','CALM <-> Jira','false')" title="Click for options">CALMJira</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
-      </div>
-      <div class="package-body">
-      <table>
-        <thead>
-          <tr>
-            <th>IFlow Name</th>
-            <th>IFlow ID</th>
-            <th><a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
-            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="notingit-row" data-iflow="Synchronize_Tasks_from_SAP_Cloud_ALM_to_Jira_copy Synchronize Tasks from SAP Cloud ALM to Jira_copy" data-loglevel="">
-            <td class="iflow-name" title="Synchronize Tasks from SAP Cloud ALM to Jira_copy">❓ Synchronize Tasks from SAP Cloud ALM to Jira_copy</td>
-            <td class="iflow-id" title="Synchronize_Tasks_from_SAP_Cloud_ALM_to_Jira_copy"><code class="copyable" onclick="showIdMenu(event,'iflow','Synchronize_Tasks_from_SAP_Cloud_ALM_to_Jira_copy','CALMJira','DEV','','','')" title="Click for options">Synchronize_Tasks_from_SAP_Cloud_ALM_to_Jira_copy</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
         </tbody>
@@ -14377,32 +14351,6 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="I557133 I557133" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I557133 (<code class="copyable" onclick="showIdMenu(event,'package','I557133','','DEV','I557133','false')" title="Click for options">I557133</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
-      </div>
-      <div class="package-body">
-      <table>
-        <thead>
-          <tr>
-            <th>IFlow Name</th>
-            <th>IFlow ID</th>
-            <th><a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
-            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="notingit-row" data-iflow="S4_2_Workiva S4_2_Workiva" data-loglevel="">
-            <td class="iflow-name" title="S4_2_Workiva">❓ S4_2_Workiva</td>
-            <td class="iflow-id" title="S4_2_Workiva"><code class="copyable" onclick="showIdMenu(event,'iflow','S4_2_Workiva','I557133','DEV','','','')" title="Click for options">S4_2_Workiva</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-    </div>
     <div class="package-section collapsed" data-package="I561009package I561009_package" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header error" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> 🔴 📦 I561009_package (<code class="copyable" onclick="showIdMenu(event,'package','I561009package','','DEV','I561009_package','false')" title="Click for options">I561009package</code>)</h2>
@@ -20877,6 +20825,27 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v2.0.0.Cleaned</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="RHIMLEASEINTERESTCCREASSIGNMENT RHIM_LEASE_INTEREST_CC_REASSIGNMENT" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 RHIM_LEASE_INTEREST_CC_REASSIGNMENT (<code class="copyable" onclick="showIdMenu(event,'package','RHIMLEASEINTERESTCCREASSIGNMENT','','DEV','RHIM_LEASE_INTEREST_CC_REASSIGNMENT','false')" title="Click for options">RHIMLEASEINTERESTCCREASSIGNMENT</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
         </tbody>
       </table>
       </div>
@@ -27608,45 +27577,45 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notingit-row" data-iflow="F_IFlow_Drift F_IFlow_Drift" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_Drift">❓ F_IFlow_Drift</td>
-            <td class="iflow-id" title="F_IFlow_Drift"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_Drift','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">F_IFlow_Drift</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_Drift CICD_TEST_F_IFlow_Drift" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_Drift">❓ CICD_TEST_F_IFlow_Drift</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_Drift"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_Drift','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">CICD_TEST_F_IFlow_Drift</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="error-row" data-iflow="F_IFlow_Error F_IFlow_Error" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_Error">🔴 F_IFlow_Error</td>
-            <td class="iflow-id" title="F_IFlow_Error"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_Error','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">F_IFlow_Error</code></td>
+          <tr class="error-row" data-iflow="CICD_TEST_F_IFlow_Error CICD_TEST_F_IFlow_Error" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_Error">🔴 CICD_TEST_F_IFlow_Error</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_Error"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_Error','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">CICD_TEST_F_IFlow_Error</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="F_IFlow_NotDeployed F_IFlow_NotDeployed" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_NotDeployed">❓ F_IFlow_NotDeployed</td>
-            <td class="iflow-id" title="F_IFlow_NotDeployed"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_NotDeployed','cicdtestfdemo01','DEV','','','')" title="Click for options">F_IFlow_NotDeployed</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_NotDeployed CICD_TEST_F_IFlow_NotDeployed" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_NotDeployed">❓ CICD_TEST_F_IFlow_NotDeployed</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_NotDeployed"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_NotDeployed','cicdtestfdemo01','DEV','','','')" title="Click for options">CICD_TEST_F_IFlow_NotDeployed</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="F_IFlow_RoleExternalized F_IFlow_RoleExternalized" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_RoleExternalized">❓ F_IFlow_RoleExternalized</td>
-            <td class="iflow-id" title="F_IFlow_RoleExternalized"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_RoleExternalized','cicdtestfdemo01','DEV','','','')" title="Click for options">F_IFlow_RoleExternalized</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_RoleExternalized CICD_TEST_F_IFlow_RoleExternalized" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_RoleExternalized">❓ CICD_TEST_F_IFlow_RoleExternalized</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_RoleExternalized"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_RoleExternalized','cicdtestfdemo01','DEV','','','')" title="Click for options">CICD_TEST_F_IFlow_RoleExternalized</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="F_IFlow_RoleInGit F_IFlow_RoleInGit" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_RoleInGit">❓ F_IFlow_RoleInGit</td>
-            <td class="iflow-id" title="F_IFlow_RoleInGit"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_RoleInGit','cicdtestfdemo01','DEV','','','')" title="Click for options">F_IFlow_RoleInGit</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_RoleInGit CICD_TEST_F_IFlow_RoleInGit" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_RoleInGit">❓ CICD_TEST_F_IFlow_RoleInGit</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_RoleInGit"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_RoleInGit','cicdtestfdemo01','DEV','','','')" title="Click for options">CICD_TEST_F_IFlow_RoleInGit</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="F_IFlow_RoleNone F_IFlow_RoleNone" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_RoleNone">❓ F_IFlow_RoleNone</td>
-            <td class="iflow-id" title="F_IFlow_RoleNone"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_RoleNone','cicdtestfdemo01','DEV','','','')" title="Click for options">F_IFlow_RoleNone</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_RoleNone CICD_TEST_F_IFlow_RoleNone" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_RoleNone">❓ CICD_TEST_F_IFlow_RoleNone</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_RoleNone"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_RoleNone','cicdtestfdemo01','DEV','','','')" title="Click for options">CICD_TEST_F_IFlow_RoleNone</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="F_IFlow_Started F_IFlow_Started" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_Started">❓ F_IFlow_Started</td>
-            <td class="iflow-id" title="F_IFlow_Started"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_Started','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">F_IFlow_Started</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_Started CICD_TEST_F_IFlow_Started" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_Started">❓ CICD_TEST_F_IFlow_Started</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_Started"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_Started','cicdtestfdemo01','DEV','','','DEV')" title="Click for options">CICD_TEST_F_IFlow_Started</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -27670,9 +27639,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notingit-row" data-iflow="F_IFlow_Orphan F_IFlow_Orphan" data-loglevel="">
-            <td class="iflow-name" title="F_IFlow_Orphan">❓ F_IFlow_Orphan</td>
-            <td class="iflow-id" title="F_IFlow_Orphan"><code class="copyable" onclick="showIdMenu(event,'iflow','F_IFlow_Orphan','cicdtestfdemoorphan','DEV','','','')" title="Click for options">F_IFlow_Orphan</code></td>
+          <tr class="notingit-row" data-iflow="CICD_TEST_F_IFlow_Orphan CICD_TEST_F_IFlow_Orphan" data-loglevel="">
+            <td class="iflow-name" title="CICD_TEST_F_IFlow_Orphan">❓ CICD_TEST_F_IFlow_Orphan</td>
+            <td class="iflow-id" title="CICD_TEST_F_IFlow_Orphan"><code class="copyable" onclick="showIdMenu(event,'iflow','CICD_TEST_F_IFlow_Orphan','cicdtestfdemoorphan','DEV','','','')" title="Click for options">CICD_TEST_F_IFlow_Orphan</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -29359,6 +29328,12 @@
             <td class="iflow-name" title="IF_01_S4HANA_SFTP_ProductMasterData">❓ IF_01_S4HANA_SFTP_ProductMasterData</td>
             <td class="iflow-id" title="IF_01_S4HANA_SFTP_ProductMasterData"><code class="copyable" onclick="showIdMenu(event,'iflow','IF_01_S4HANA_SFTP_ProductMasterData','i505015','DEV','','','')" title="Click for options">IF_01_S4HANA_SFTP_ProductMasterData</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="IF_03_API_CI_FailedIntegrationMonitor IF_03_API_CI_FailedIntegrationMonitor" data-loglevel="">
+            <td class="iflow-name" title="IF_03_API_CI_FailedIntegrationMonitor">❓ IF_03_API_CI_FailedIntegrationMonitor</td>
+            <td class="iflow-id" title="IF_03_API_CI_FailedIntegrationMonitor"><code class="copyable" onclick="showIdMenu(event,'iflow','IF_03_API_CI_FailedIntegrationMonitor','i505015','DEV','','','DEV')" title="Click for options">IF_03_API_CI_FailedIntegrationMonitor</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.6</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="Iflow_Demo_T28_MigrationTool Iflow_Demo_T28_MigrationTool" data-loglevel="">
