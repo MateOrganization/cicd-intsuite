@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T03:13:41Z",
+  "generated": "2026-09-03T03:20:10Z",
   "environments": [
     "DEV",
     "TST"
@@ -71682,26 +71682,6 @@
           }
         },
         {
-          "id": "CICD_TEST_F_IFlow_Error",
-          "name": "CICD_TEST_F_IFlow_Error",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "ERROR",
-              "runtimeVersion": "1.0.0"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
           "id": "CICD_TEST_F_IFlow_NotDeployed",
           "name": "CICD_TEST_F_IFlow_NotDeployed",
           "source": "btp",
@@ -71784,6 +71764,40 @@
         {
           "id": "CICD_TEST_F_IFlow_Started",
           "name": "CICD_TEST_F_IFlow_Started",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cicdtestfdemogreen",
+      "name": "CICD_TEST_F_DEMO_GREEN",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "CICD_TEST_F_IFlow_Green",
+          "name": "CICD_TEST_F_IFlow_Green",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -75989,6 +76003,26 @@
           }
         },
         {
+          "id": "IF_04_SFTP_FileTransfer",
+          "name": "IF_04_SFTP_FileTransfer",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "Iflow_Demo_T28_MigrationTool",
           "name": "Iflow_Demo_T28_MigrationTool",
           "source": "btp",
@@ -76902,8 +76936,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 403,
+    "btpPackageCount": 404,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 403
+    "totalPackageCount": 404
   }
 }
