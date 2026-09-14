@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T03:24:02Z",
+  "generated": "2026-09-14T03:49:16Z",
   "environments": [
     "DEV",
     "TST"
@@ -29565,7 +29565,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -39720,7 +39720,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -46033,7 +46033,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
