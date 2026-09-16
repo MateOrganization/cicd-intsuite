@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T03:40:06Z",
+  "generated": "2026-09-16T03:47:03Z",
   "environments": [
     "DEV",
     "TST"
@@ -230,60 +230,6 @@
         {
           "id": "IF_TPM_ProcessDirectTest",
           "name": "IF_TPM_ProcessDirectTest",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "AZ0234SAPDefectManagmentv472026.08",
-      "name": "AZ0234_SAP_DefectManagment_v47(2026.08)",
-      "source": "btp",
-      "foundOnEnvironments": [
-        "DEV"
-      ],
-      "gitConfig": {
-        "found": false,
-        "jsonFormat": null
-      },
-      "iflows": [
-        {
-          "id": "IF_PGC60801A_Aggregator_process_fails_after_Completion",
-          "name": "IF_PGC60801A_Aggregator_process_fails_after_Completion",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "IF_PGC60803A_Aggregator_goes_into_inconstistent_State",
-          "name": "IF_PGC60803A_Aggregator_goes_into_inconstistent_State",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -34062,8 +34008,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
             },
             "TST": {
               "deploy": null,
@@ -46033,7 +45979,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -77826,8 +77772,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 412,
+    "btpPackageCount": 411,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 412
+    "totalPackageCount": 411
   }
 }
