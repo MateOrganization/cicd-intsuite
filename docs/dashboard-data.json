@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T03:43:16Z",
+  "generated": "2026-09-19T03:32:25Z",
   "environments": [
     "DEV",
     "TST"
@@ -6791,6 +6791,120 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination.EIC",
+          "name": "Pipeline v2 Generic Step05 - Interface Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "CloudIntegrationPipelineGenericPipelines.I325409",
+      "name": "ZCloud Integration Pipeline - Generic Pipelines.I325409",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step02.inbound.processing.I325409",
+          "name": "Pipeline v2 Generic Step02 - Inbound Processing",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.async.I325409",
+          "name": "Pipeline v2 Generic Step02 - Integrated Messaging Runtime Async",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step02.integrated.messaging.sync.I325409",
+          "name": "Pipeline v2 Generic Step02 - Integrated Messaging Runtime Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step04.receiver.determination.I325409",
+          "name": "Pipeline v2 Generic Step04 - Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step05.interface.determination.I325409",
           "name": "Pipeline v2 Generic Step05 - Interface Determination",
           "source": "btp",
           "hasGitConfig": false,
@@ -42431,7 +42545,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -51559,7 +51673,7 @@
       "iflows": [
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step01.inbound.processing.idoc.SecondPackage",
-          "name": "Pipeline Generic Step01 - Inbound Processing for Idoc",
+          "name": "DEPRECATED - Pipeline Generic Step01 - Inbound Processing for Idoc",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51567,7 +51681,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.8"
+              "runtimeVersion": "1.0.9"
             },
             "TST": {
               "deploy": null,
@@ -51579,7 +51693,7 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step01.inbound.processing.xi.SecondPackage",
-          "name": "Pipeline Generic Step01 - Inbound Processing for XI",
+          "name": "DEPRECATED - Pipeline Generic Step01 - Inbound Processing for XI",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51599,7 +51713,7 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step02.inbound.processing.SecondPackage",
-          "name": "Pipeline Generic Step02 - Inbound Processing",
+          "name": "DEPRECATED - Pipeline Generic Step02 - Inbound Processing",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51619,7 +51733,7 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step02.integrated.messaging.async.SecondPackage",
-          "name": "Pipeline Generic Step02 - Integrated Messaging Runtime Async",
+          "name": "DEPRECATED - Pipeline Generic Step02 - Integrated Messaging Runtime Async",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51639,7 +51753,7 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step02.integrated.messaging.sync.SecondPackage",
-          "name": "Pipeline Generic Step02 - Integrated Messaging Runtime Sync",
+          "name": "DEPRECATED - Pipeline Generic Step02 - Integrated Messaging Runtime Sync",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51659,7 +51773,7 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step04.receiver.determination.SecondPackage",
-          "name": "Pipeline Generic Step04 - Receiver Determination",
+          "name": "DEPRECATED - Pipeline Generic Step04 - Receiver Determination",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51679,7 +51793,267 @@
         },
         {
           "id": "com.sap.integration.cloud.pipeline.generic.step05.interface.determination.SecondPackage",
-          "name": "Pipeline Generic Step05 - Interface Determination",
+          "name": "DEPRECATED - Pipeline Generic Step05 - Interface Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.custom.error.handling.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template - Custom Error Handling",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.alo.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step01 - Inbound Processing At Least Once",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.eo.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step01 - Inbound Processing Exactly Once",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.sync.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step01 - Inbound Processing Synchronous",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step03.inbound.conversion.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step03 - Inbound Conversion",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step04.custom.receiver.determination.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step04 - Custom Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step04.reuse.extended.receiver.determination.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step04 - Reuse Extended Receiver Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step05.custom.interface.determination.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step05 - Custom Interface Determination",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.moar.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step07 - Outbound Processing Maintain Order At Runtime",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.o2mm.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step07 - Outbound Processing One-to-Many with Multiple Message Types",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.o2mo.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step07 - Outbound Processing One-to-Many with One Message Type",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.p2p.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step07 - Outbound Processing Point-to-Point",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.sync.SecondPackage",
+          "name": "DEPRECATED - Pipeline Template Step07 - Outbound Processing Synchronous",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -51708,266 +52082,6 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.9"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.custom.error.handling.SecondPackage",
-          "name": "Pipeline Template - Custom Error Handling",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.alo.SecondPackage",
-          "name": "Pipeline Template Step01 - Inbound Processing At Least Once",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.eo.SecondPackage",
-          "name": "Pipeline Template Step01 - Inbound Processing Exactly Once",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step01.inbound.processing.sync.SecondPackage",
-          "name": "Pipeline Template Step01 - Inbound Processing Synchronous",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step03.inbound.conversion.SecondPackage",
-          "name": "Pipeline Template Step03 - Inbound Conversion",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step04.custom.receiver.determination.SecondPackage",
-          "name": "Pipeline Template Step04 - Custom Receiver Determination",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step04.reuse.extended.receiver.determination.SecondPackage",
-          "name": "Pipeline Template Step04 - Reuse Extended Receiver Determination",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step05.custom.interface.determination.SecondPackage",
-          "name": "Pipeline Template Step05 - Custom Interface Determination",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.moar.SecondPackage",
-          "name": "Pipeline Template Step07 - Outbound Processing Maintain Order At Runtime",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.o2mm.SecondPackage",
-          "name": "Pipeline Template Step07 - Outbound Processing One-to-Many with Multiple Message Types",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.o2mo.SecondPackage",
-          "name": "Pipeline Template Step07 - Outbound Processing One-to-Many with One Message Type",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.p2p.SecondPackage",
-          "name": "Pipeline Template Step07 - Outbound Processing Point-to-Point",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "com.sap.integration.cloud.pipeline.template.step07.outbound.processing.sync.SecondPackage",
-          "name": "Pipeline Template Step07 - Outbound Processing Synchronous",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -76813,26 +76927,6 @@
       },
       "iflows": [
         {
-          "id": "EGI_MigrationTool_Demo",
-          "name": "EGI_MigrationTool_Demo",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
           "id": "Groovy_Mapping_Demo",
           "name": "Groovy Mapping Demo",
           "source": "btp",
@@ -76953,8 +77047,8 @@
           }
         },
         {
-          "id": "Iflow_Demo_T28_MigrationTool",
-          "name": "Iflow_Demo_T28_MigrationTool",
+          "id": "IF_05_SFSF_SQL_ReplicateEmployee",
+          "name": "IF_05_SFSF_SQL_ReplicateEmployee",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -76983,26 +77077,6 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.6"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "iFlow2_DEMO_PO6_MigrationAsssesment",
-          "name": "iFlow2_DEMO_PO6_MigrationAsssesment",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -77846,8 +77920,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 412,
+    "btpPackageCount": 413,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 412
+    "totalPackageCount": 413
   }
 }
