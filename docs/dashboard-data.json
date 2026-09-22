@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T03:45:10Z",
+  "generated": "2026-09-22T03:35:12Z",
   "environments": [
     "DEV",
     "TST"
@@ -28865,6 +28865,26 @@
               "logLevel": null,
               "runtimeStatus": "NOT_DEPLOYED",
               "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "SalesOrder_Replication",
+          "name": "SalesOrder Replication",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
