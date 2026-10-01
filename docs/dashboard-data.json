@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T04:27:56Z",
+  "generated": "2026-10-01T04:23:14Z",
   "environments": [
     "DEV",
     "TST"
@@ -5745,7 +5745,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.8"
+              "runtimeVersion": "1.0.9"
             },
             "TST": {
               "deploy": null,
@@ -5765,7 +5765,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -11983,6 +11983,26 @@
         {
           "id": "IF_OFTP2Test",
           "name": "IF_OFTP2Test",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_OFTPSENDER_ACCEPT_ONLY",
+          "name": "IF_OFTPSENDER_ACCEPT_ONLY",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -50106,6 +50126,46 @@
           }
         },
         {
+          "id": "PIP_Custom_PostProcessing",
+          "name": "PIP_Custom_PostProcessing",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIP_Custom_PreProcessing",
+          "name": "PIP_Custom_PreProcessing",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "PIP_EncodeAndUpload_XSLT",
           "name": "PIP_EncodeAndUpload_XSLT",
           "source": "btp",
@@ -50116,6 +50176,26 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.4"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIP_FetchTenantDetails",
+          "name": "PIP_FetchTenantDetails",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -50155,7 +50235,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeVersion": "1.0.1"
             },
             "TST": {
               "deploy": null,
@@ -50422,6 +50502,80 @@
       ]
     },
     {
+      "id": "PIPSamplesScenario10",
+      "name": "PIP Samples - Scenario 10",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "PIPSamplesScenario10_Step01",
+          "name": "PIPSamplesScenario10_Step01",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPSamplesScenario10_Step07_RCV1_IF1",
+          "name": "PIPSamplesScenario10_Step07_RCV1_IF1",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPSamplesScenario10_Step07_RCV1_IF2",
+          "name": "PIPSamplesScenario10_Step07_RCV1_IF2",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "PIPSamplesScenario2",
       "name": "PIP Samples - Scenario 2",
       "source": "btp",
@@ -50433,6 +50587,26 @@
         "jsonFormat": null
       },
       "iflows": [
+        {
+          "id": "PIPSamplesScenario2_Step03",
+          "name": "PIPSamplesScenario2_Step03_Filter",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
         {
           "id": "PIPSamplesScenario2_Step05_CustomInterfaceDetermination",
           "name": "PIPSamplesScenario2_Step05_CustomInterfaceDetermination",
@@ -72072,8 +72246,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -74800,7 +74974,28 @@
         "found": false,
         "jsonFormat": null
       },
-      "iflows": []
+      "iflows": [
+        {
+          "id": "CICD_TEST_V2_DEL01_IFlow",
+          "name": "CICD_TEST_V2_DEL01_IFlow",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
     },
     {
       "id": "com.hilti.ct.s4c.005",
@@ -79161,8 +79356,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 416,
+    "btpPackageCount": 417,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 416
+    "totalPackageCount": 417
   }
 }
