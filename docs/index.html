@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-10-02T04:33:23Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 417 BTP packages</span>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-10-03T04:05:51Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 418 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">417</div>
+          <div class="number">418</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">417</div>
+          <div class="number">418</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">416</div>
+          <div class="number">417</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 416 packages missing entirely</div>
+          <div class="sub-label">🔴 417 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 416 package(s) and 3671 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 417 package(s) and 3675 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -9833,6 +9833,27 @@
       </table>
       </div>
     </div>
+    <div class="package-section collapsed" data-package="GoogleCloudStorageAdapterforSAPIntegrationSuite Google Cloud Storage Adapter for SAP Integration Suite" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Google Cloud Storage Adapter for SAP Integration Suite (<code class="copyable" onclick="showIdMenu(event,'package','GoogleCloudStorageAdapterforSAPIntegrationSuite','','DEV','Google Cloud Storage Adapter for SAP Integration Suite','false')" title="Click for options">GoogleCloudStorageAdapterforSAPIntegrationSuite</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
     <div class="package-section collapsed" data-package="GroovywithIDE Groovy_with_IDE" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 Groovy_with_IDE (<code class="copyable" onclick="showIdMenu(event,'package','GroovywithIDE','','DEV','Groovy_with_IDE','false')" title="Click for options">GroovywithIDE</code>)</h2>
@@ -11020,9 +11041,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="I302015 I302015" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I302015 (<code class="copyable" onclick="showIdMenu(event,'package','I302015','','DEV','I302015','false')" title="Click for options">I302015</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 I302015 (<code class="copyable" onclick="showIdMenu(event,'package','I302015','','DEV','I302015','false')" title="Click for options">I302015</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -11063,6 +11084,12 @@
             <td class="iflow-name" title="I302015_AddMPLs">❓ I302015_AddMPLs</td>
             <td class="iflow-id" title="I302015_AddMPLs"><code class="copyable" onclick="showIdMenu(event,'iflow','I302015_AddMPLs','I302015','DEV','','','DEV')" title="Click for options">I302015_AddMPLs</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.1</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="I302015_CheckRuntimeType I302015_CheckRuntimeType" data-loglevel="">
+            <td class="iflow-name" title="I302015_CheckRuntimeType">❓ I302015_CheckRuntimeType</td>
+            <td class="iflow-id" title="I302015_CheckRuntimeType"><code class="copyable" onclick="showIdMenu(event,'iflow','I302015_CheckRuntimeType','I302015','DEV','','','DEV')" title="Click for options">I302015_CheckRuntimeType</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="I302015_Consume_DS_TEST I302015_Consume_DS_TEST" data-loglevel="">
@@ -11221,10 +11248,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="IF_RET_FMS_IODS_OB_I050706_CARPriceExport IF_RET_FMS_IODS_OB_I050706_CARPriceExport" data-loglevel="">
-            <td class="iflow-name" title="IF_RET_FMS_IODS_OB_I050706_CARPriceExport">❓ IF_RET_FMS_IODS_OB_I050706_CARPriceExport</td>
+          <tr class="error-row" data-iflow="IF_RET_FMS_IODS_OB_I050706_CARPriceExport IF_RET_FMS_IODS_OB_I050706_CARPriceExport" data-loglevel="">
+            <td class="iflow-name" title="IF_RET_FMS_IODS_OB_I050706_CARPriceExport">🔴 IF_RET_FMS_IODS_OB_I050706_CARPriceExport</td>
             <td class="iflow-id" title="IF_RET_FMS_IODS_OB_I050706_CARPriceExport"><code class="copyable" onclick="showIdMenu(event,'iflow','IF_RET_FMS_IODS_OB_I050706_CARPriceExport','I302015','DEV','','','DEV')" title="Click for options">IF_RET_FMS_IODS_OB_I050706_CARPriceExport</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.1</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.1</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="IF_SI_OA_u100_101_Bankfil IF_SI_OA_u100_101_Bankfil" data-loglevel="">
@@ -11391,7 +11418,7 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="I302015POCXIPROXY I302015_POC_XI_PROXY" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="I302015POCXIPROXY I302015_POC_XI_PROXY" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 I302015_POC_XI_PROXY (<code class="copyable" onclick="showIdMenu(event,'package','I302015POCXIPROXY','','DEV','I302015_POC_XI_PROXY','false')" title="Click for options">I302015POCXIPROXY</code>)</h2>
         <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
@@ -11407,7 +11434,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+          <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.eic Pipeline v2 Generic Step08 - Outbound Processing for XI" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Generic Step08 - Outbound Processing for XI">❓ Pipeline v2 Generic Step08 - Outbound Processing for XI</td>
+            <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.eic"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.eic','I302015POCXIPROXY','DEV','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.eic</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
         </tbody>
       </table>
       </div>
@@ -12890,6 +12922,12 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+          <tr class="notingit-row" data-iflow="IF_SOAP_Generic_Testing IF_SOAP_Generic_Testing" data-loglevel="">
+            <td class="iflow-name" title="IF_SOAP_Generic_Testing">❓ IF_SOAP_Generic_Testing</td>
+            <td class="iflow-id" title="IF_SOAP_Generic_Testing"><code class="copyable" onclick="showIdMenu(event,'iflow','IF_SOAP_Generic_Testing','I325409','DEV','','','DEV')" title="Click for options">IF_SOAP_Generic_Testing</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
           <tr class="notingit-row" data-iflow="IF_SOAP_ResponseTesting IF_SOAP_ResponseTesting" data-loglevel="">
             <td class="iflow-name" title="IF_SOAP_ResponseTesting">❓ IF_SOAP_ResponseTesting</td>
             <td class="iflow-id" title="IF_SOAP_ResponseTesting"><code class="copyable" onclick="showIdMenu(event,'iflow','IF_SOAP_ResponseTesting','I325409','DEV','','','DEV')" title="Click for options">IF_SOAP_ResponseTesting</code></td>
@@ -13331,6 +13369,12 @@
           <tr class="notingit-row" data-iflow="com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration" data-loglevel="">
             <td class="iflow-name" title="Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration">❓ Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration</td>
             <td class="iflow-id" title="com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration','I325409','DEV','','','')" title="Click for options">com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Pipeline_v2_Generic_Step01_-_Inbound_Processing_for_XI_FaultHandlingTest Pipeline v2 Generic Step01 - Inbound Processing for XI_FaultHandlingTest" data-loglevel="">
+            <td class="iflow-name" title="Pipeline v2 Generic Step01 - Inbound Processing for XI_FaultHandlingTest">❓ Pipeline v2 Generic Step01 - Inbound Processing for XI_FaultHandlingTest</td>
+            <td class="iflow-id" title="Pipeline_v2_Generic_Step01_-_Inbound_Processing_for_XI_FaultHandlingTest"><code class="copyable" onclick="showIdMenu(event,'iflow','Pipeline_v2_Generic_Step01_-_Inbound_Processing_for_XI_FaultHandlingTest','I325409','DEV','','','')" title="Click for options">Pipeline_v2_Generic_Step01_-_Inbound_Processing_for_XI_FaultHandlingTest</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -14816,10 +14860,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="iFlow006_SFTP iFlow006_SFTP" data-loglevel="">
-            <td class="iflow-name" title="iFlow006_SFTP">❓ iFlow006_SFTP</td>
+          <tr class="error-row" data-iflow="iFlow006_SFTP iFlow006_SFTP" data-loglevel="">
+            <td class="iflow-name" title="iFlow006_SFTP">🔴 iFlow006_SFTP</td>
             <td class="iflow-id" title="iFlow006_SFTP"><code class="copyable" onclick="showIdMenu(event,'iflow','iFlow006_SFTP','I561009package','DEV','','','DEV')" title="Click for options">iFlow006_SFTP</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.1</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.1</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="iFlow007_HTTP_SFTP_Pipeline_test_step01 iFlow007_HTTP_SFTP_Pipeline_test_step01" data-loglevel="">
