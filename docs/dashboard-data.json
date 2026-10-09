@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T04:53:02Z",
+  "generated": "2026-10-09T04:58:52Z",
   "environments": [
     "DEV",
     "TST"
@@ -33222,6 +33222,26 @@
           }
         },
         {
+          "id": "IF_CopyPartnerDIrectory_CI_2_EIC",
+          "name": "IF_CopyPartnerDIrectory_CI_2_EIC",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "IF_Counter_Testing",
           "name": "IF_Counter_Testing",
           "source": "btp",
@@ -33670,8 +33690,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -33690,8 +33710,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -34310,8 +34330,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.0"
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -35864,6 +35884,26 @@
         {
           "id": "Mate_REST2REST",
           "name": "Mate_REST2REST",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Mate_Testing_JavaMapping",
+          "name": "Mate_Testing_JavaMapping",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -46708,7 +46748,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -64803,6 +64843,40 @@
       ]
     },
     {
+      "id": "SAPMasterDataGovernanceonSAPS4HANAIntegrationwithCorporateDataQuality",
+      "name": "SAP Master Data Governance on SAP S/4HANA Integration with Corporate Data Quality",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "Search_Corporate_Data_Quality_reference_data_with_SAP_Master_Data_Governance_on_SAP_S4HANA",
+          "name": "Search Corporate Data Quality reference data with SAP Master Data Governance on SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "SAPPoCObjectStore",
       "name": "[SAP] PoC - Object Store",
       "source": "btp",
@@ -79777,8 +79851,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 420,
+    "btpPackageCount": 421,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 420
+    "totalPackageCount": 421
   }
 }
