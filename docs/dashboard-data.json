@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T03:36:28Z",
+  "generated": "2026-10-16T03:35:07Z",
   "environments": [
     "DEV",
     "TST"
@@ -5745,7 +5745,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.9"
+              "runtimeVersion": "1.0.10"
             },
             "TST": {
               "deploy": null,
@@ -5765,7 +5765,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.6"
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -5907,7 +5907,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.5"
             },
             "TST": {
               "deploy": null,
@@ -5927,7 +5927,27 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.4"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc.edge",
+          "name": "Pipeline v2 Generic Step08 - Outbound Processing for Idoc on Edge",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -5947,7 +5967,27 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.5"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.edge",
+          "name": "Pipeline v2 Generic Step08 - Outbound Processing for XI on Edge",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -6377,7 +6417,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -6397,7 +6437,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -6417,7 +6457,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -6437,7 +6477,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -6457,7 +6497,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.5"
             },
             "TST": {
               "deploy": null,
@@ -7474,8 +7514,8 @@
       ]
     },
     {
-      "id": "CloudIntegrationPipelineTemplates.copy",
-      "name": "Cloud Integration Pipeline - Templates.copy",
+      "id": "CloudIntegrationPipelineTemplates.prime",
+      "name": "Cloud Integration Pipeline - Templates.prime",
       "source": "btp",
       "foundOnEnvironments": [
         "DEV"
@@ -7486,7 +7526,7 @@
       },
       "iflows": [
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration.25.9.2026_7.56.40",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.partnerdirectoryupload.skipretryconfiguration.prime",
           "name": "Pipeline v2 - Partner Directory Upload Helper - Skip Retry Configuration",
           "source": "btp",
           "hasGitConfig": false,
@@ -7506,7 +7546,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.error.handling.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.error.handling.prime",
           "name": "Pipeline v2 Template - Custom Error Handling",
           "source": "btp",
           "hasGitConfig": false,
@@ -7526,7 +7566,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.exit.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.custom.exit.prime",
           "name": "Pipeline v2 Template - Custom Exit",
           "source": "btp",
           "hasGitConfig": false,
@@ -7546,7 +7586,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.alo.prime",
           "name": "Pipeline v2 Template Step01 - Inbound Processing At Least Once",
           "source": "btp",
           "hasGitConfig": false,
@@ -7566,7 +7606,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.eo.prime",
           "name": "Pipeline v2 Template Step01 - Inbound Processing Exactly Once",
           "source": "btp",
           "hasGitConfig": false,
@@ -7586,7 +7626,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync.prime",
           "name": "Pipeline v2 Template Step01 - Inbound Processing Synchronous",
           "source": "btp",
           "hasGitConfig": false,
@@ -7606,7 +7646,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step03.inbound.conversion.prime",
           "name": "Pipeline v2 Template Step03 - Inbound Conversion",
           "source": "btp",
           "hasGitConfig": false,
@@ -7626,7 +7666,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.prime",
           "name": "Pipeline v2 Template Step04 - Custom Receiver Determination",
           "source": "btp",
           "hasGitConfig": false,
@@ -7646,7 +7686,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.scripts.prime",
           "name": "Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Exchange Properties",
           "source": "btp",
           "hasGitConfig": false,
@@ -7666,7 +7706,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.custom.receiver.determination.xrd.prime",
           "name": "Pipeline v2 Template Step04 - Custom Receiver and Interface Determination via Extended Receiver Determination",
           "source": "btp",
           "hasGitConfig": false,
@@ -7686,7 +7726,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step04.reuse.extended.receiver.determination.prime",
           "name": "Pipeline v2 Template Step04 - Reuse Extended Receiver Determination",
           "source": "btp",
           "hasGitConfig": false,
@@ -7706,7 +7746,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step05.custom.interface.determination.prime",
           "name": "Pipeline v2 Template Step05 - Custom Interface Determination",
           "source": "btp",
           "hasGitConfig": false,
@@ -7726,7 +7766,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime",
           "source": "btp",
           "hasGitConfig": false,
@@ -7746,7 +7786,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc.25.9.2026_7.56.40",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2m.to.idoc.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many to Generic IDoc Outbound",
           "source": "btp",
           "hasGitConfig": false,
@@ -7766,7 +7806,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mm.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many with Multiple Message Types",
           "source": "btp",
           "hasGitConfig": false,
@@ -7786,7 +7826,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.o2mo.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing One-to-Many with One Message Type",
           "source": "btp",
           "hasGitConfig": false,
@@ -7806,7 +7846,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point",
           "source": "btp",
           "hasGitConfig": false,
@@ -7826,7 +7866,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc.18.12.2025_9.37.26",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.idoc.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic IDoc Outbound",
           "source": "btp",
           "hasGitConfig": false,
@@ -7846,7 +7886,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi.18.12.2025_9.37.26",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.p2p.to.xi.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing Point-to-Point to Generic XI Outbound",
           "source": "btp",
           "hasGitConfig": false,
@@ -7866,7 +7906,7 @@
           }
         },
         {
-          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync.copy",
+          "id": "com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.sync.prime",
           "name": "Pipeline v2 Template Step07 - Outbound Processing Synchronous",
           "source": "btp",
           "hasGitConfig": false,
@@ -8850,6 +8890,66 @@
         "jsonFormat": null
       },
       "iflows": [
+        {
+          "id": "ALSTOM_FI_SAP_TO_HFM_GLOBAL",
+          "name": "ALSTOM_FI_SAP_TO_HFM_GLOBAL",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ALSTOM_FI_SAP_To_ARM_GeneralLedger",
+          "name": "ALSTOM_FI_SAP_To_ARM_GeneralLedger",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ALSTOM_SD_SAP_To_OLS_OrderStatusFeed",
+          "name": "ALSTOM_SD_SAP_To_OLS_OrderStatusFeed",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
         {
           "id": "ASTAR_IF_HR_SF_TO_HR_DATAMART_DAILY_EMPDATA",
           "name": "ASTAR_IF_HR_SF_TO_HR_DATAMART_DAILY_EMPDATA",
@@ -25394,6 +25494,40 @@
       ]
     },
     {
+      "id": "ERPtoSuccessFactorsEmployeeCentralCostCenter.I505015",
+      "name": "SAP ERP or SAP S/4HANA Integration with SAP SuccessFactors Employee Central: Cost Center.I505015",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "com.sap.ODTFINCC.fin2ec.SAPToSFSFCostCenterReplication.v1.I505015",
+          "name": "Replicate Cost Centers from SAP ERP or SAP S4HANA to SAP SuccessFactors Employee Central",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "10.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ERPtoSuccessFactorsEmployeeCentralCostCenter.I858806",
       "name": "SAP ERP or SAP S/4HANA Integration with SAP SuccessFactors Employee Central: Cost Center.I858806",
       "source": "btp",
@@ -31724,7 +31858,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -46768,7 +46902,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -50750,7 +50884,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -73148,8 +73282,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
             },
             "TST": {
               "deploy": null,
@@ -73602,7 +73736,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.1.0"
             },
             "TST": {
@@ -80038,8 +80172,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 423,
+    "btpPackageCount": 424,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 423
+    "totalPackageCount": 424
   }
 }
