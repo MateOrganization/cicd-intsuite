@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-10-16T03:35:07Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 424 BTP packages</span>
+    <div class="meta"><span>📁 <strong>MateOrganization/cicd-intsuite</strong></span><span>📅 2026-10-17T03:18:16Z</span><span>🌍 <a href="https://tech.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST</span><span>📦 424 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -290,7 +290,7 @@
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 423 package(s) and 3708 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 423 package(s) and 3709 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -16041,7 +16041,7 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="I589085a I589085" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="I589085a I589085" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 I589085 (<code class="copyable" onclick="showIdMenu(event,'package','I589085a','','DEV','I589085','false')" title="Click for options">I589085a</code>)</h2>
         <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
@@ -16057,7 +16057,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+          <tr class="notingit-row" data-iflow="EIC_Node_Connectivity_Test EIC Node Connectivity Test" data-loglevel="">
+            <td class="iflow-name" title="EIC Node Connectivity Test">❓ EIC Node Connectivity Test</td>
+            <td class="iflow-id" title="EIC_Node_Connectivity_Test"><code class="copyable" onclick="showIdMenu(event,'iflow','EIC_Node_Connectivity_Test','I589085a','DEV','','','')" title="Click for options">EIC_Node_Connectivity_Test</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
         </tbody>
       </table>
       </div>

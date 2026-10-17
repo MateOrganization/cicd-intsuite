@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T03:35:07Z",
+  "generated": "2026-10-17T03:18:16Z",
   "environments": [
     "DEV",
     "TST"
@@ -43231,7 +43231,28 @@
         "found": false,
         "jsonFormat": null
       },
-      "iflows": []
+      "iflows": [
+        {
+          "id": "EIC_Node_Connectivity_Test",
+          "name": "EIC Node Connectivity Test",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
     },
     {
       "id": "I748985",
