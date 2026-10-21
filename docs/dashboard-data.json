@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T04:00:06Z",
+  "generated": "2026-10-21T03:46:06Z",
   "environments": [
     "DEV",
     "TST"
@@ -25911,7 +25911,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.3"
             },
             "TST": {
@@ -38126,6 +38126,26 @@
           }
         },
         {
+          "id": "IF_Ciphers",
+          "name": "IF_Ciphers",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "IF_Consumer_Testing",
           "name": "IF_Consumer_Testing",
           "source": "btp",
@@ -40522,7 +40542,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -42600,8 +42620,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -46923,7 +46943,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -65781,7 +65801,7 @@
       "iflows": [
         {
           "id": "Assign_Service_Employee_from_SAP_S4HANA_as_Warehouse_Owner_in_SAP_Field_Service_Management",
-          "name": "Assign Service Employee from SAP S4HANA as Warehouse Owner in SAP Field Service Management",
+          "name": "Assign Service Employee from SAP S4HANA as Warehouse Owner in SAP Field Service and Asset Management",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65801,7 +65821,7 @@
         },
         {
           "id": "Check_Configuration_for_Integration_of_SAP_S4HANA_with_SAP_Field_Service_Management",
-          "name": "Check Configuration for Integration of SAP S4HANA with SAP Field Service Management",
+          "name": "Check Configuration for Integration of SAP S4HANA with SAP Field Service and Asset Management",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65840,6 +65860,26 @@
           }
         },
         {
+          "id": "Crowd_Service_Entry_Sheet_Creation_from_SAP_Field_Service_Managemet_to_SAP_S4HANA",
+          "name": "Crowd Service Entry Sheet Creation from SAP Field Service and Asset Management to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "Delete_Business_Partner_Employee",
           "name": "Delete Business Partner Employee",
           "source": "btp",
@@ -65860,8 +65900,28 @@
           }
         },
         {
+          "id": "Notify_External_Service_Order_Item_with_Crowd_Changes_from_SAP_Field_Service_Management_to_SAP_S4HANA",
+          "name": "Notify External Service Order Item with Crowd Changes from SAP Field Service and Asset Management to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "Notify_Plant_Maintenance_Order_Update_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Notify Plant Maintenance Order Update from SAP Field Service Management to SAP S4HANA",
+          "name": "Notify Plant Maintenance Order Update from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65881,7 +65941,7 @@
         },
         {
           "id": "Notify_Service_Order_Update_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Notify Service Order Update from SAP Field Service Management to SAP S4HANA",
+          "name": "Notify Service Order Update from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65901,7 +65961,7 @@
         },
         {
           "id": "Notify_Service_Order_Updates_in_Bulk_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Notify Service Order Updates in Bulk from SAP Field Service Management to SAP S4HANA",
+          "name": "Notify Service Order Updates in Bulk from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65921,7 +65981,7 @@
         },
         {
           "id": "Replicate_Attachments_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Attachments from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Attachments from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -65941,7 +66001,7 @@
         },
         {
           "id": "Replicate_Attachments_from_SAP_S4HANA_to_SAP_Field_Service_Management",
-          "name": "Replicate Attachments from SAP S4HANA to SAP Field Service Management",
+          "name": "Replicate Attachments from SAP S4HANA to SAP Field Service and Asset Management",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66041,7 +66101,7 @@
         },
         {
           "id": "Replicate_Checklist_Instance_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Checklist Instance from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Checklist Instance from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66061,7 +66121,7 @@
         },
         {
           "id": "Replicate_Checklist_Template_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Checklist Template from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Checklist Template from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66081,7 +66141,7 @@
         },
         {
           "id": "Replicate_Confirmed_Maintenance_Service_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Confirmed Maintenance from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Confirmed Maintenance from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66101,7 +66161,7 @@
         },
         {
           "id": "Replicate_Confirmed_Service_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Confirmed Service from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Confirmed Service from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66121,7 +66181,27 @@
         },
         {
           "id": "Replicate_Contact_from_SAP_Field_Service_Management_to_S4HANA",
-          "name": "Replicate Contact from SAP Field Service Management to S4HANA",
+          "name": "Replicate Contact from SAP Field Service and Asset Management to SAPS4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Crowd_Partner_and_Technician_from_SAP_S4HANA_to_SAP_Field_Service_Management",
+          "name": "Replicate Crowd Partner and Technician from SAP S4HANA to SAP Field Service and Asset Management",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66141,7 +66221,7 @@
         },
         {
           "id": "Replicate_Equipment_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Equipment from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Equipment from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66181,7 +66261,7 @@
         },
         {
           "id": "Replicate_Measurement_Reading_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Measurement Reading from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Measurement Reading from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66201,7 +66281,7 @@
         },
         {
           "id": "Replicate_Plant_Maintenance_Call_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Plant Maintenance Call from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Plant Maintenance Call from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66281,7 +66361,7 @@
         },
         {
           "id": "Replicate_Service_Call_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Replicate Service Call from SAP Field Service Management to SAP S4HANA",
+          "name": "Replicate Service Call from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66301,7 +66381,7 @@
         },
         {
           "id": "Replicate_Service_Order_from_SAP_S4HANA_to_SAP_Field_Service_Management_SOAP",
-          "name": "Replicate Service Order from SAP S4HANA to SAP Field Service Management SOAP",
+          "name": "Replicate Service Order from SAP S4HANA to SAP Field Service and Asset Management SOAP",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66321,7 +66401,7 @@
         },
         {
           "id": "Route_Master_Data_Payload_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Route Master Data Payload from SAP Field Service Management to SAP S4HANA",
+          "name": "Route Master Data Payload from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66341,7 +66421,7 @@
         },
         {
           "id": "Route_Payload_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Route Payload from SAP Field Service Management to SAP S4HANA",
+          "name": "Route Payload from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66361,7 +66441,7 @@
         },
         {
           "id": "Send_Error_Email_for_Integration_SAP_S4HANA_with_SAP_Field_Service_Management",
-          "name": "Send Error Email for Integration SAP S4HANA with SAP Field Service Management",
+          "name": "Send Error Email for Integration SAP S4HANA with SAP Field Service and Asset Management",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66401,7 +66481,7 @@
         },
         {
           "id": "Update_Maintenance_Order_for_New_Activity_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Update Maintenance Order for New Activity from SAP Field Service Management to SAP S4HANA",
+          "name": "Update Maintenance Order for New Activity from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -66421,7 +66501,7 @@
         },
         {
           "id": "Update_Service_Order_for_Duplicate_Activity_from_SAP_Field_Service_Management_to_SAP_S4HANA",
-          "name": "Update Service Order for New Activity from SAP Field Service Management to SAP S4HANA",
+          "name": "Update Service Order for New Activity from SAP Field Service and Asset Management to SAP S4HANA",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -79310,6 +79390,46 @@
               "logLevel": null,
               "runtimeStatus": "NOT_DEPLOYED",
               "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_07_MATMAS_S4HANA_Deliver",
+          "name": "IF_07_MATMAS_S4HANA_Deliver",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_07_MATMAS_ServiceExpose",
+          "name": "IF_07_MATMAS_ServiceExpose",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
