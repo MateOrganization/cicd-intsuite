@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T03:46:06Z",
+  "generated": "2026-10-22T03:48:05Z",
   "environments": [
     "DEV",
     "TST"
@@ -238,6 +238,60 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "AZ0234SAPDefectManagmentv472026.08",
+      "name": "AZ0234_SAP_DefectManagment_v47(2026.08)",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "IF_PGC60801A_Aggregator_process_fails_after_Completion",
+          "name": "IF_PGC60801A_Aggregator_process_fails_after_Completion",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_PGC60803A_Aggregator_goes_into_inconstistent_State",
+          "name": "IF_PGC60803A_Aggregator_goes_into_inconstistent_State",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
             },
             "TST": {
               "deploy": null,
@@ -6665,7 +6719,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.6"
+              "runtimeVersion": "1.0.8"
             },
             "TST": {
               "deploy": null,
@@ -8973,6 +9027,66 @@
         {
           "id": "ASTAR_IF_HR_SF_TO_HR_DATAMART_DAILY_EMPDATA_SFTP",
           "name": "ASTAR_IF_HR_SF_TO_HR_DATAMART_DAILY_EMPDATA_SFTP",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "BANESCO_ITFI01_EnvioDocumentosContables_S4_To_IBS",
+          "name": "BANESCO_ITFI01_EnvioDocumentosContables_S4_To_IBS",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "BANESCO_ITFI02_NotificacionArchivo_S4_To_IBS_VE",
+          "name": "BANESCO_ITFI02_NotificacionArchivo_S4_To_IBS_VE",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "BANESCO_ITFI04_CreacionDocumentosContables_IBS_To_S4_VE",
+          "name": "BANESCO_ITFI04_CreacionDocumentosContables_IBS_To_S4_VE",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -40542,7 +40656,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -42621,7 +42735,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.5"
             },
             "TST": {
               "deploy": null,
@@ -79409,7 +79523,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -79430,6 +79544,26 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.4"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_08__S4HANA_QueryUserInfo",
+          "name": "IF_08_ S4HANA_QueryUserInfo",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -80313,8 +80447,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 424,
+    "btpPackageCount": 425,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 424
+    "totalPackageCount": 425
   }
 }
