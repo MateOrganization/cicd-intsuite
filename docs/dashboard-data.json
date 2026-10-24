@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T03:45:23Z",
+  "generated": "2026-10-24T03:44:25Z",
   "environments": [
     "DEV",
     "TST"
@@ -6183,7 +6183,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -6214,8 +6214,48 @@
           }
         },
         {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.idoc.edge.23.10.2026_0.28.8",
+          "name": "Pipeline v2 Generic Step08 - Outbound Processing for Idoc on Edge",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.10.11.2025_7.19.51",
           "name": "Pipeline v2 Generic Step08 - Outbound Processing for XI",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step08.outbound.processing.xi.edge.23.10.2026_0.28.8",
+          "name": "Pipeline v2 Generic Step08 - Outbound Processing for XI on Edge",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -6505,7 +6545,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.7"
+              "runtimeVersion": "1.0.8"
             },
             "TST": {
               "deploy": null,
@@ -6545,7 +6585,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.7"
+              "runtimeVersion": "1.0.8"
             },
             "TST": {
               "deploy": null,
@@ -6565,7 +6605,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.6"
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -6585,7 +6625,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.5"
+              "runtimeVersion": "1.0.6"
             },
             "TST": {
               "deploy": null,
@@ -47091,7 +47131,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -50898,8 +50938,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "ERROR",
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -50999,6 +51039,66 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIP_Mocked_Receiver_slow",
+          "name": "PIP_Mocked_Receiver1_slow",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIP_Mocked_Receiver2",
+          "name": "PIP_Mocked_Receiver2",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIP_Mocked_Receiver3",
+          "name": "PIP_Mocked_Receiver3",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
@@ -51073,7 +51173,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.5"
             },
             "TST": {
               "deploy": null,
@@ -51112,8 +51212,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -51193,7 +51293,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -79597,7 +79697,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.6"
+              "runtimeVersion": "2.1.6"
             },
             "TST": {
               "deploy": null,
