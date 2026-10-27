@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T03:45:12Z",
+  "generated": "2026-10-27T04:19:06Z",
   "environments": [
     "DEV",
     "TST"
@@ -5962,6 +5962,60 @@
               "logLevel": null,
               "runtimeStatus": "NOT_DEPLOYED",
               "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "CloudIntegrationPipelineGenericInbound.MateInbound",
+      "name": "Cloud Integration Pipeline - Generic Inbound.MateInbound",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.idoc.MateInbound",
+          "name": "Pipeline v2 Generic Step01 - Inbound Processing for Idoc",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "com.sap.integration.cloud.pipeline.v2.generic.step01.inbound.processing.xi.MateInbound",
+          "name": "Pipeline v2 Generic Step01 - Inbound Processing for XI",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.7"
             },
             "TST": {
               "deploy": null,
@@ -26274,6 +26328,19 @@
       "iflows": []
     },
     {
+      "id": "GoToWebinarAdapterforSAPIntegrationSuite",
+      "name": "GoTo Webinar Adapter for SAP Integration Suite",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "GoogleBigQueryAdapterforSAPIntegrationSuite",
       "name": "Google BigQuery Adapter for SAP Integration Suite",
       "source": "btp",
@@ -40730,7 +40797,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.1"
             },
             "TST": {
@@ -50394,6 +50461,32 @@
           }
         }
       ]
+    },
+    {
+      "id": "NordicsTest2MCP",
+      "name": "Nordics-Test2-MCP",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
+      "id": "NordicsTestMCP",
+      "name": "Nordics-Test-MCP",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
     },
     {
       "id": "OEMSAPECCSalesforceContentPackage",
@@ -80621,8 +80714,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 426,
+    "btpPackageCount": 430,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 426
+    "totalPackageCount": 430
   }
 }
