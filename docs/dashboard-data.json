@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T06:28:17Z",
+  "generated": "2026-11-19T06:14:38Z",
   "environments": [
     "DEV",
     "TST"
@@ -6652,7 +6652,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.7"
+              "runtimeVersion": "1.0.8"
             },
             "TST": {
               "deploy": null,
@@ -26326,7 +26326,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.7"
             },
             "TST": {
@@ -40876,7 +40876,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.4"
             },
             "TST": {
@@ -47847,6 +47847,60 @@
         {
           "id": "iFlow_Purchase_Order_request_to_D729_S4C-S4P",
           "name": "iFlow Purchase Order request to D729 S4C-S4P",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "IPSAPPoCDocumentAIS4HANAPaymentAdvice",
+      "name": "IP_SAP_PoC_DocumentAI_S4HANA_PaymentAdvice",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "IF_SAP_PoC_DocumentAI_S4HANA_PaymentAdvice_confirmed",
+          "name": "IF_SAP_PoC_DocumentAI_S4HANA_PaymentAdvice_confirmed",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IF_SAP_PoC_DocumentAI_S4HANA_PaymentAdvice_raw",
+          "name": "IF_SAP_PoC_DocumentAI_S4HANA_PaymentAdvice_raw",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -80851,8 +80905,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -81154,8 +81208,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 433,
+    "btpPackageCount": 434,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 433
+    "totalPackageCount": 434
   }
 }
